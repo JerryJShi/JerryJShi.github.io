@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next muse use-motion" lang="zh-Hans">
+<html class="theme-next pisces use-motion" lang="zh-CN">
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -45,6 +45,32 @@
 
 
 
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
 
 
 
@@ -68,7 +94,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="network,协议,">
 
 
 
@@ -80,19 +106,20 @@
 
 
 <meta name="description" content="网络什么是网络？网络是把各种设备连接起来，按照一定的通讯协议，进行通讯的集合。 网络物理拓扑结构 总线拓扑 环状拓扑 星型拓扑 扩展星型拓扑 网状拓扑 双环拓扑  OSI参考模型 应用层  application 表示层  persention 会话层  session 传输层  transport 网络层  network 数据链路层  data link 物理层  physical  网络模型">
+<meta name="keywords" content="network,协议">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Jerry&#39;s Blog">
+<meta property="og:title" content="网络协议">
 <meta property="og:url" content="http://yoursite.com/2018/10/30/NetworkProtocol/index.html">
 <meta property="og:site_name" content="Jerry&#39;s Blog">
 <meta property="og:description" content="网络什么是网络？网络是把各种设备连接起来，按照一定的通讯协议，进行通讯的集合。 网络物理拓扑结构 总线拓扑 环状拓扑 星型拓扑 扩展星型拓扑 网状拓扑 双环拓扑  OSI参考模型 应用层  application 表示层  persention 会话层  session 传输层  transport 网络层  network 数据链路层  data link 物理层  physical  网络模型">
-<meta property="og:locale" content="zh-Hans">
+<meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://user-images.githubusercontent.com/43201545/47615726-cad71e00-daed-11e8-9d55-4c73c1eca4be.png">
 <meta property="og:image" content="https://user-images.githubusercontent.com/43201545/47616883-56a47680-dafd-11e8-9273-203e98c8723e.png">
 <meta property="og:image" content="https://user-images.githubusercontent.com/43201545/47617203-dfbcad00-daff-11e8-91ab-d8ba27e75bcd.png">
 <meta property="og:image" content="https://user-images.githubusercontent.com/43201545/47617252-37f3af00-db00-11e8-896a-559e929b82e7.png">
-<meta property="og:updated_time" content="2018-10-28T14:49:00.315Z">
+<meta property="og:updated_time" content="2018-10-30T12:58:24.977Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Jerry&#39;s Blog">
+<meta name="twitter:title" content="网络协议">
 <meta name="twitter:description" content="网络什么是网络？网络是把各种设备连接起来，按照一定的通讯协议，进行通讯的集合。 网络物理拓扑结构 总线拓扑 环状拓扑 星型拓扑 扩展星型拓扑 网状拓扑 双环拓扑  OSI参考模型 应用层  application 表示层  persention 会话层  session 传输层  transport 网络层  network 数据链路层  data link 物理层  physical  网络模型">
 <meta name="twitter:image" content="https://user-images.githubusercontent.com/43201545/47615726-cad71e00-daed-11e8-9d55-4c73c1eca4be.png">
 
@@ -102,7 +129,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Muse',
+    scheme: 'Pisces',
     version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
@@ -130,7 +157,7 @@
 
 
 
-  <title> | Jerry's Blog</title>
+  <title>网络协议 | Jerry's Blog</title>
   
 
 
@@ -142,7 +169,7 @@
 
 </head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-CN">
 
   
   
@@ -151,7 +178,8 @@
 
   <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
-
+    <a href="https://github.com/JerryJShi"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_darkblue_121621.png" alt="Fork me on GitHub"></a>
+    
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
   <div class="site-meta ">
@@ -284,7 +312,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline"></h1>
+          <h1 class="post-title" itemprop="name headline">网络协议</h1>
         
 
         <div class="post-meta">
@@ -306,6 +334,28 @@
             
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/网络/" itemprop="url" rel="index">
+                    <span itemprop="name">网络</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -660,6 +710,14 @@ OSPF 会考虑带宽
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/network/" rel="tag"># network</a>
+          
+            <a href="/tags/协议/" rel="tag"># 协议</a>
+          
+        </div>
+      
 
       
       
@@ -761,7 +819,25 @@ OSPF 会考虑带宽
             
 
             
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
             
 
           </nav>
@@ -821,15 +897,7 @@ OSPF 会考虑带宽
 </div>
 
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
-
-
-
-  <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+  <div class="theme-info">GitHub &mdash; <a class="theme-link" target="_blank" href="https://github.com/JerryJShi">ShiJianjian</a></div>
 
 
 
@@ -928,6 +996,13 @@ OSPF 会考虑带宽
 
   
   
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
 
   
   <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
