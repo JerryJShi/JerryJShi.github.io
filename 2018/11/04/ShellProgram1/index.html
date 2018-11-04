@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="shell,编程,">
 
 
 
@@ -79,16 +79,18 @@
 
 
 
-<meta name="description" content="Linux 学习心得，经验总结">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Jerry&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/page/2/index.html">
+<meta name="description" content="SHELL脚本编程shell脚本：包含一些命令或声明，并符合一定格式的文本文件 格式要求：首行shebang机制123#!/bin/bash#!/usr/bin/python#!/usr/bin/perl shell脚本的用途有 自动化常用命令 执行系统管理和故障排除 创建简单的应用程序 处理文本或文件  脚本规范脚本代码开头约定  第一行一般为调用使用的语言 程序名，避免更改文件名为无法找到正确">
+<meta name="keywords" content="shell,编程">
+<meta property="og:type" content="article">
+<meta property="og:title" content="SHELL脚本编程基础">
+<meta property="og:url" content="http://yoursite.com/2018/11/04/ShellProgram1/index.html">
 <meta property="og:site_name" content="Jerry&#39;s Blog">
-<meta property="og:description" content="Linux 学习心得，经验总结">
+<meta property="og:description" content="SHELL脚本编程shell脚本：包含一些命令或声明，并符合一定格式的文本文件 格式要求：首行shebang机制123#!/bin/bash#!/usr/bin/python#!/usr/bin/perl shell脚本的用途有 自动化常用命令 执行系统管理和故障排除 创建简单的应用程序 处理文本或文件  脚本规范脚本代码开头约定  第一行一般为调用使用的语言 程序名，避免更改文件名为无法找到正确">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-11-04T14:22:31.967Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Jerry&#39;s Blog">
-<meta name="twitter:description" content="Linux 学习心得，经验总结">
+<meta name="twitter:title" content="SHELL脚本编程基础">
+<meta name="twitter:description" content="SHELL脚本编程shell脚本：包含一些命令或声明，并符合一定格式的文本文件 格式要求：首行shebang机制123#!/bin/bash#!/usr/bin/python#!/usr/bin/perl shell脚本的用途有 自动化常用命令 执行系统管理和故障排除 创建简单的应用程序 处理文本或文件  脚本规范脚本代码开头约定  第一行一般为调用使用的语言 程序名，避免更改文件名为无法找到正确">
 
 
 
@@ -118,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/page/2/">
+  <link rel="canonical" href="http://yoursite.com/2018/11/04/ShellProgram1/">
 
 
 
 
 
-  <title>Jerry's Blog</title>
+  <title>SHELL脚本编程基础 | Jerry's Blog</title>
   
 
 
@@ -143,8 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
     <a href="https://github.com/JerryJShi"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_darkblue_121621.png" alt="Fork me on GitHub"></a>
     
@@ -248,9 +249,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -280,9 +281,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/11/04/ShellProgram1/" itemprop="url">SHELL脚本编程基础</a></h1>
+          <h1 class="post-title" itemprop="name headline">SHELL脚本编程基础</h1>
         
 
         <div class="post-meta">
@@ -336,6 +335,11 @@
           
 
           
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i> 阅读数
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
 
           
 
@@ -354,9 +358,7 @@
       
 
       
-        
-          
-            <h1 id="SHELL脚本编程"><a href="#SHELL脚本编程" class="headerlink" title="SHELL脚本编程"></a>SHELL脚本编程</h1><p>shell脚本：包含一些命令或声明，并符合一定格式的文本文件</p>
+        <h1 id="SHELL脚本编程"><a href="#SHELL脚本编程" class="headerlink" title="SHELL脚本编程"></a>SHELL脚本编程</h1><p>shell脚本：包含一些命令或声明，并符合一定格式的文本文件</p>
 <p>格式要求：首行shebang机制<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#!/bin/bash</span><br><span class="line">#!/usr/bin/python</span><br><span class="line">#!/usr/bin/perl</span><br></pre></td></tr></table></figure></p>
 <h2 id="shell脚本的用途有"><a href="#shell脚本的用途有" class="headerlink" title="shell脚本的用途有"></a>shell脚本的用途有</h2><ul>
 <li>自动化常用命令</li>
@@ -434,8 +436,6 @@ MAIN_CODE
 <p>显示已定义的所有变量：set</p>
 <p>删除变量：unset name</p>
 
-          
-        
       
     </div>
     
@@ -450,14 +450,42 @@ MAIN_CODE
 
     <footer class="post-footer">
       
-
+        <div class="post-tags">
+          
+            <a href="/tags/shell/" rel="tag"># shell</a>
+          
+            <a href="/tags/编程/" rel="tag"># 编程</a>
+          
+        </div>
       
 
       
+      
+      
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/10/30/NetworkProtocol/" rel="next" title="网络协议">
+                <i class="fa fa-chevron-left"></i> 网络协议
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/11/04/ShellProgram2/" rel="prev" title="SHELL脚本编程进阶">
+                SHELL脚本编程进阶 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
       
-        <div class="post-eof"></div>
+
+      
       
     </footer>
   </div>
@@ -467,14 +495,11 @@ MAIN_CODE
   </article>
 
 
-    
-  </section>
 
-  
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/9/">9</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right"></i></a>
-  </nav>
-
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -482,6 +507,10 @@ MAIN_CODE
 
 
           
+
+  
+
+
 
         </div>
         
@@ -502,8 +531,17 @@ MAIN_CODE
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -573,6 +611,22 @@ MAIN_CODE
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#SHELL脚本编程"><span class="nav-number">1.</span> <span class="nav-text">SHELL脚本编程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#shell脚本的用途有"><span class="nav-number">1.1.</span> <span class="nav-text">shell脚本的用途有</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#脚本规范"><span class="nav-number">1.2.</span> <span class="nav-text">脚本规范</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#脚本的基本结构"><span class="nav-number">1.3.</span> <span class="nav-text">脚本的基本结构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#脚本调试"><span class="nav-number">1.4.</span> <span class="nav-text">脚本调试</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#变量"><span class="nav-number">1.5.</span> <span class="nav-text">变量</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#变量命名规则"><span class="nav-number">1.5.1.</span> <span class="nav-text">变量命名规则</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#变量作用"><span class="nav-number">1.5.2.</span> <span class="nav-text">变量作用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#变量存储类型"><span class="nav-number">1.5.3.</span> <span class="nav-text">变量存储类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#注意事项"><span class="nav-number">1.5.4.</span> <span class="nav-text">注意事项</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#bash中变量的种类"><span class="nav-number">1.6.</span> <span class="nav-text">bash中变量的种类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#环境变量"><span class="nav-number">1.7.</span> <span class="nav-text">环境变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#局部变量"><span class="nav-number">1.8.</span> <span class="nav-text">局部变量</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -725,6 +779,10 @@ MAIN_CODE
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 

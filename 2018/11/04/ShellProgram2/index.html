@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="shell,编程,">
 
 
 
@@ -79,16 +79,18 @@
 
 
 
-<meta name="description" content="Linux 学习心得，经验总结">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Jerry&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="SHELL脚本编程进阶流程控制语句面向过程编程语言：  顺序执行 选择执行 循环执行  if条件选择if COMMANDS; then     COMMANDS [ elif COMMANDS; then COMMANDS; ]     ...  [ else COMMANDS; ] fi case条件判断case 变量引用 in PATTERN)     分支1     ;; PATTERN)">
+<meta name="keywords" content="shell,编程">
+<meta property="og:type" content="article">
+<meta property="og:title" content="SHELL脚本编程进阶">
+<meta property="og:url" content="http://yoursite.com/2018/11/04/ShellProgram2/index.html">
 <meta property="og:site_name" content="Jerry&#39;s Blog">
-<meta property="og:description" content="Linux 学习心得，经验总结">
+<meta property="og:description" content="SHELL脚本编程进阶流程控制语句面向过程编程语言：  顺序执行 选择执行 循环执行  if条件选择if COMMANDS; then     COMMANDS [ elif COMMANDS; then COMMANDS; ]     ...  [ else COMMANDS; ] fi case条件判断case 变量引用 in PATTERN)     分支1     ;; PATTERN)">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-11-04T14:52:37.391Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Jerry&#39;s Blog">
-<meta name="twitter:description" content="Linux 学习心得，经验总结">
+<meta name="twitter:title" content="SHELL脚本编程进阶">
+<meta name="twitter:description" content="SHELL脚本编程进阶流程控制语句面向过程编程语言：  顺序执行 选择执行 循环执行  if条件选择if COMMANDS; then     COMMANDS [ elif COMMANDS; then COMMANDS; ]     ...  [ else COMMANDS; ] fi case条件判断case 变量引用 in PATTERN)     分支1     ;; PATTERN)">
 
 
 
@@ -118,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="http://yoursite.com/2018/11/04/ShellProgram2/">
 
 
 
 
 
-  <title>Jerry's Blog</title>
+  <title>SHELL脚本编程进阶 | Jerry's Blog</title>
   
 
 
@@ -143,8 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
     <a href="https://github.com/JerryJShi"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_darkblue_121621.png" alt="Fork me on GitHub"></a>
     
@@ -248,9 +249,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -280,9 +281,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/11/04/ShellProgram2/" itemprop="url">SHELL脚本编程进阶</a></h1>
+          <h1 class="post-title" itemprop="name headline">SHELL脚本编程进阶</h1>
         
 
         <div class="post-meta">
@@ -336,6 +335,11 @@
           
 
           
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i> 阅读数
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
 
           
 
@@ -354,9 +358,7 @@
       
 
       
-        
-          
-            <h1 id="SHELL脚本编程进阶"><a href="#SHELL脚本编程进阶" class="headerlink" title="SHELL脚本编程进阶"></a>SHELL脚本编程进阶</h1><h2 id="流程控制语句"><a href="#流程控制语句" class="headerlink" title="流程控制语句"></a>流程控制语句</h2><p>面向过程编程语言：</p>
+        <h1 id="SHELL脚本编程进阶"><a href="#SHELL脚本编程进阶" class="headerlink" title="SHELL脚本编程进阶"></a>SHELL脚本编程进阶</h1><h2 id="流程控制语句"><a href="#流程控制语句" class="headerlink" title="流程控制语句"></a>流程控制语句</h2><p>面向过程编程语言：</p>
 <ul>
 <li>顺序执行</li>
 <li>选择执行</li>
@@ -475,8 +477,6 @@ done
 <p>函数实现：</p>
 <p><code>:(){:|:&amp;};:</code><br><code>bomb() { bomb | bomb&amp; }; bomb</code></p>
 
-          
-        
       
     </div>
     
@@ -491,14 +491,38 @@ done
 
     <footer class="post-footer">
       
-
+        <div class="post-tags">
+          
+            <a href="/tags/shell/" rel="tag"># shell</a>
+          
+            <a href="/tags/编程/" rel="tag"># 编程</a>
+          
+        </div>
       
 
       
+      
+      
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/11/04/ShellProgram1/" rel="next" title="SHELL脚本编程基础">
+                <i class="fa fa-chevron-left"></i> SHELL脚本编程基础
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
       
-        <div class="post-eof"></div>
+
+      
       
     </footer>
   </div>
@@ -508,14 +532,11 @@ done
   </article>
 
 
-    
-  </section>
 
-  
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/9/">9</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
-  </nav>
-
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -523,6 +544,10 @@ done
 
 
           
+
+  
+
+
 
         </div>
         
@@ -543,8 +568,17 @@ done
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -614,6 +648,22 @@ done
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#SHELL脚本编程进阶"><span class="nav-number">1.</span> <span class="nav-text">SHELL脚本编程进阶</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#流程控制语句"><span class="nav-number">1.1.</span> <span class="nav-text">流程控制语句</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#if条件选择"><span class="nav-number">1.2.</span> <span class="nav-text">if条件选择</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#case条件判断"><span class="nav-number">1.3.</span> <span class="nav-text">case条件判断</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#for循环"><span class="nav-number">1.4.</span> <span class="nav-text">for循环</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#列表生成方法"><span class="nav-number">1.4.1.</span> <span class="nav-text">列表生成方法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#while循环"><span class="nav-number">1.5.</span> <span class="nav-text">while循环</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#无限循环"><span class="nav-number">1.5.1.</span> <span class="nav-text">无限循环</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#while循环遍历文件的每一行"><span class="nav-number">1.5.2.</span> <span class="nav-text">while循环遍历文件的每一行</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#until循环"><span class="nav-number">1.6.</span> <span class="nav-text">until循环</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#无限循环-1"><span class="nav-number">1.6.1.</span> <span class="nav-text">无限循环</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#select循环与菜单"><span class="nav-number">1.7.</span> <span class="nav-text">select循环与菜单</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#循环控制语句continue"><span class="nav-number">1.8.</span> <span class="nav-text">循环控制语句continue</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#循环控制语句break"><span class="nav-number">1.9.</span> <span class="nav-text">循环控制语句break</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#shift命令"><span class="nav-number">1.10.</span> <span class="nav-text">shift命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#函数"><span class="nav-number">1.11.</span> <span class="nav-text">函数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#函数和shell脚本的区别"><span class="nav-number">1.11.1.</span> <span class="nav-text">函数和shell脚本的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#函数组成"><span class="nav-number">1.11.2.</span> <span class="nav-text">函数组成</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#定义函数"><span class="nav-number">1.11.3.</span> <span class="nav-text">定义函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查看函数定义"><span class="nav-number">1.11.4.</span> <span class="nav-text">查看函数定义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#定义函数-1"><span class="nav-number">1.11.5.</span> <span class="nav-text">定义函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#载入函数"><span class="nav-number">1.11.6.</span> <span class="nav-text">载入函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#删除函数"><span class="nav-number">1.11.7.</span> <span class="nav-text">删除函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#环境函数"><span class="nav-number">1.11.8.</span> <span class="nav-text">环境函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#函数引用"><span class="nav-number">1.11.9.</span> <span class="nav-text">函数引用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#函数变量"><span class="nav-number">1.11.10.</span> <span class="nav-text">函数变量</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#环境变量"><span class="nav-number">1.11.10.1.</span> <span class="nav-text">环境变量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#本地变量，全局变量，普通变量"><span class="nav-number">1.11.10.2.</span> <span class="nav-text">本地变量，全局变量，普通变量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#局部变量"><span class="nav-number">1.11.10.3.</span> <span class="nav-text">局部变量</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#函数参数"><span class="nav-number">1.11.11.</span> <span class="nav-text">函数参数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#函数递归"><span class="nav-number">1.11.12.</span> <span class="nav-text">函数递归</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#fork炸弹"><span class="nav-number">1.11.13.</span> <span class="nav-text">fork炸弹</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -766,6 +816,10 @@ done
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 

@@ -82,7 +82,7 @@
 <meta name="description" content="Linux 学习心得，经验总结">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Jerry&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/categories/网络/index.html">
+<meta property="og:url" content="http://yoursite.com/page/8/index.html">
 <meta property="og:site_name" content="Jerry&#39;s Blog">
 <meta property="og:description" content="Linux 学习心得，经验总结">
 <meta property="og:locale" content="zh-CN">
@@ -118,13 +118,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/categories/网络/">
+  <link rel="canonical" href="http://yoursite.com/page/8/">
 
 
 
 
 
-  <title>分类: 网络 | Jerry's Blog</title>
+  <title>Jerry's Blog</title>
   
 
 
@@ -143,7 +143,8 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left 
+  page-home">
     <div class="headband"></div>
     <a href="https://github.com/JerryJShi"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_darkblue_121621.png" alt="Fork me on GitHub"></a>
     
@@ -247,53 +248,220 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-
-  
-  
-  
-  <div class="post-block category">
-
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>网络<small>分类</small>
-        </h1>
-      </div>
-
+  <section id="posts" class="posts-expand">
+    
       
-        
+
+  
+
+  
+  
+  
 
   <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/25/PhysicalLink_SymbolicLink/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ShiJianjian">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jerry's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2018/10/30/NetworkProtocol/" itemprop="url">
-              
-                <span itemprop="name">网络协议</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/09/25/PhysicalLink_SymbolicLink/" itemprop="url">硬链接与软连接</a></h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-10-30T10:45:32+08:00" content="2018-10-30">
-          10-30
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-25T11:46:24+08:00">
+                2018-09-25
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/文件管理/" itemprop="url" rel="index">
+                    <span itemprop="name">文件管理</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    </div>
+      
 
+      
+        
+          
+            <h1 id="硬链接和软连接的区别"><a href="#硬链接和软连接的区别" class="headerlink" title="硬链接和软连接的区别"></a>硬链接和软连接的区别</h1><p>Linux系统中有硬链接和软链接之分，它们之间究竟什么区别呢，今天在这里总结以下，如有遗漏，不吝赐教。</p>
+<p>分析硬链接与软连接的区别，可以从以下8个方面思考，</p>
+<ol>
+<li>是否是同一文件</li>
+<li>是否支持跨分区</li>
+<li>链接数是否增长</li>
+<li>结点号是否相同</li>
+<li>原始文件删除，链接文件可否访问</li>
+<li>链接文件的大小</li>
+<li>是否支持目录</li>
+<li>是否支持相对路径</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>不同点</th>
+<th>硬链接</th>
+<th>软连接</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>是否指向同一文件</td>
+<td>与原文件是同一个文件，表示一个文件起多个文件名</td>
+<td>与原文件是不同文件</td>
+</tr>
+<tr>
+<td>是否可以跨分区</td>
+<td>不支持跨分区</td>
+<td>支持跨分区</td>
+</tr>
+<tr>
+<td>链接数是否增长</td>
+<td>链接数增加</td>
+<td>链接数不增加</td>
+</tr>
+<tr>
+<td>inode number 是否相同</td>
+<td>相同</td>
+<td>不同</td>
+</tr>
+<tr>
+<td>原文件删除，链接文件是否可以访问</td>
+<td>可以</td>
+<td>不可以</td>
+</tr>
+<tr>
+<td>链接文件与原文件的大小</td>
+<td>与原文件大小相同</td>
+<td>文件较小，文件大小是路径的大小</td>
+</tr>
+<tr>
+<td>是否支持目录</td>
+<td>不支持链接到目录</td>
+<td>支持链接到目录</td>
+</tr>
+<tr>
+<td>文件名支持的相对路径不同</td>
+<td>硬链接支持的相对路径是相对于当前工作目录</td>
+<td>软连接支持相对路径相对于链接目录</td>
+</tr>
+</tbody>
+</table>
+<h1 id="mv命令和ln-s-的区别"><a href="#mv命令和ln-s-的区别" class="headerlink" title="mv命令和ln -s 的区别"></a>mv命令和ln -s 的区别</h1><p>例 mv /dir1/f1 /dir2/f2<br>mv 命令底层工作原理分为两种情况：<br>1、/dir1 /dir2 在同一分区：mv 命令用新的文件名f2创建对应新的目录项，删除f1目录条目对应的旧的文件名，不影响f1 inode表（除时间戳）或磁盘上的数据位置，数据没有被移动。<br>2、/dir1 /dir2 在不同分区：在目标分区分配一个空闲的inode号，在inode表中生成新条目，在目录中创建一个目录项，将文件名f2与inode编号关联，拷贝f1数据到目标分区生成新的文件。释放源分区f1的inode号，以备重用，链接数递减，把数据块放在空闲列表中，删除源目录项。</p>
+<p>例 ln -s /dir1/f1 /dir2/f2<br>ln -s 符号链接底层工作原理不区分是否在同一分区：<br>分配一个新的inode号，inode表中生成新条目，在目录中创建一个目录项，将文件名f2与inode号关联，数据不移动，f2的内容时它引用的f1的路径，f1的inode号不变，f1的链接数不增加或减少。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
   </div>
   
   
   
+  </article>
+
+
+    
+  </section>
 
   
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/7/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><span class="page-number current">8</span><a class="page-number" href="/page/9/">9</a><a class="extend next" rel="next" href="/page/9/"><i class="fa fa-angle-right"></i></a>
+  </nav>
 
 
 
