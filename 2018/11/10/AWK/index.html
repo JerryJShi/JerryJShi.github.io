@@ -79,16 +79,17 @@
 
 
 
-<meta name="description" content="Linux 学习心得，经验总结">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Jerry&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="AWK 文本报告生成器AWK 是行处理工具，每次处理一条记录。CentOS 中默认使用 GNU awk（gawk） AWK 用法awk [options] ‘program’ var=value file…awk [options] -f programfile var=value file…awk [options] ‘BEGIN{action;… }pattern{action;… }END{">
+<meta property="og:type" content="article">
+<meta property="og:title" content="AWK">
+<meta property="og:url" content="http://yoursite.com/2018/11/10/AWK/index.html">
 <meta property="og:site_name" content="Jerry&#39;s Blog">
-<meta property="og:description" content="Linux 学习心得，经验总结">
+<meta property="og:description" content="AWK 文本报告生成器AWK 是行处理工具，每次处理一条记录。CentOS 中默认使用 GNU awk（gawk） AWK 用法awk [options] ‘program’ var=value file…awk [options] -f programfile var=value file…awk [options] ‘BEGIN{action;… }pattern{action;… }END{">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-11-11T13:17:07.290Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Jerry&#39;s Blog">
-<meta name="twitter:description" content="Linux 学习心得，经验总结">
+<meta name="twitter:title" content="AWK">
+<meta name="twitter:description" content="AWK 文本报告生成器AWK 是行处理工具，每次处理一条记录。CentOS 中默认使用 GNU awk（gawk） AWK 用法awk [options] ‘program’ var=value file…awk [options] -f programfile var=value file…awk [options] ‘BEGIN{action;… }pattern{action;… }END{">
 
 
 
@@ -118,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="http://yoursite.com/2018/11/10/AWK/">
 
 
 
 
 
-  <title>Jerry's Blog</title>
+  <title>AWK | Jerry's Blog</title>
   
 
 
@@ -143,8 +144,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
     <a href="https://github.com/JerryJShi"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_darkblue_121621.png" alt="Fork me on GitHub"></a>
     
@@ -248,9 +248,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -280,9 +280,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/11/10/AWK/" itemprop="url">AWK</a></h1>
+          <h1 class="post-title" itemprop="name headline">AWK</h1>
         
 
         <div class="post-meta">
@@ -314,6 +312,11 @@
           
 
           
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i> 阅读数
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
 
           
 
@@ -332,9 +335,7 @@
       
 
       
-        
-          
-            <h1 id="AWK-文本报告生成器"><a href="#AWK-文本报告生成器" class="headerlink" title="AWK 文本报告生成器"></a>AWK 文本报告生成器</h1><p>AWK 是行处理工具，每次处理一条记录。<br>CentOS 中默认使用 GNU awk（gawk）</p>
+        <h1 id="AWK-文本报告生成器"><a href="#AWK-文本报告生成器" class="headerlink" title="AWK 文本报告生成器"></a>AWK 文本报告生成器</h1><p>AWK 是行处理工具，每次处理一条记录。<br>CentOS 中默认使用 GNU awk（gawk）</p>
 <h2 id="AWK-用法"><a href="#AWK-用法" class="headerlink" title="AWK 用法"></a>AWK 用法</h2><p>awk [options] ‘program’ var=value file…<br>awk [options] -f programfile var=value file…<br>awk [options] ‘BEGIN{action;… }pattern{action;… }END{action;… }’ file …</p>
 <p>awk 程序可由：BEGIN语句块、能够使用模式匹配的通用语句块、END语句块，共3部分组成<br>program 通常是被放在单引号中</p>
 <h2 id="AWK-基本格式"><a href="#AWK-基本格式" class="headerlink" title="AWK 基本格式"></a>AWK 基本格式</h2><p>awk [options] ‘program’ file…</p>
@@ -444,8 +445,6 @@
 <p>读入文件时，变量可以不用加 -v</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">[root@centos7-1 data]#vim f2.awk</span><br><span class="line">#!/bin/awk -f</span><br><span class="line">#</span><br><span class="line">&#123;if($3&gt;=num)print $1,$3&#125;</span><br><span class="line">[root@centos7-1 data]#./f2.awk -F: num=1000 /etc/passwd</span><br><span class="line">nfsnobody 65534</span><br></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[root@centos7-1 data]#vim f3.awk</span><br><span class="line">#!/bin/awk -f</span><br><span class="line">&#123;if($3&gt;=min &amp;&amp; $3&lt;=max)print $1,$3&#125; </span><br><span class="line">[root@centos7-1 data]#./f3.awk -F: min=100 max=200 /etc/passwd</span><br><span class="line">systemd-network 192</span><br></pre></td></tr></table></figure>
-          
-        
       
     </div>
     
@@ -462,12 +461,28 @@
       
 
       
+      
+      
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/11/04/ShellProgram2/" rel="next" title="SHELL脚本编程进阶">
+                <i class="fa fa-chevron-left"></i> SHELL脚本编程进阶
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
 
       
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -477,14 +492,11 @@
   </article>
 
 
-    
-  </section>
 
-  
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/10/">10</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
-  </nav>
-
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -492,6 +504,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -512,8 +528,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -583,6 +608,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#AWK-文本报告生成器"><span class="nav-number">1.</span> <span class="nav-text">AWK 文本报告生成器</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#AWK-用法"><span class="nav-number">1.1.</span> <span class="nav-text">AWK 用法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#AWK-基本格式"><span class="nav-number">1.2.</span> <span class="nav-text">AWK 基本格式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#pattern-模式"><span class="nav-number">1.2.1.</span> <span class="nav-text">pattern 模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#action-动作"><span class="nav-number">1.2.2.</span> <span class="nav-text">action 动作</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#AWK-变量"><span class="nav-number">1.3.</span> <span class="nav-text">AWK 变量</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#内置变量"><span class="nav-number">1.3.1.</span> <span class="nav-text">内置变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义变量"><span class="nav-number">1.3.2.</span> <span class="nav-text">自定义变量</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#printf-格式化输出"><span class="nav-number">1.4.</span> <span class="nav-text">printf 格式化输出</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#修饰符"><span class="nav-number">1.4.0.1.</span> <span class="nav-text">修饰符</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#算术操作符"><span class="nav-number">1.5.</span> <span class="nav-text">算术操作符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#PATTERN"><span class="nav-number">1.6.</span> <span class="nav-text">PATTERN</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#if-else-条件判断"><span class="nav-number">1.7.</span> <span class="nav-text">if-else 条件判断</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#while-循环"><span class="nav-number">1.8.</span> <span class="nav-text">while 循环</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#do-while-循环"><span class="nav-number">1.9.</span> <span class="nav-text">do-while 循环</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#for-循环"><span class="nav-number">1.10.</span> <span class="nav-text">for 循环</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#switch"><span class="nav-number">1.11.</span> <span class="nav-text">switch</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#break"><span class="nav-number">1.12.</span> <span class="nav-text">break</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#continue"><span class="nav-number">1.13.</span> <span class="nav-text">continue</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#next"><span class="nav-number">1.14.</span> <span class="nav-text">next</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数组"><span class="nav-number">1.15.</span> <span class="nav-text">数组</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#函数"><span class="nav-number">1.16.</span> <span class="nav-text">函数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#内置函数"><span class="nav-number">1.16.1.</span> <span class="nav-text">内置函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义函数"><span class="nav-number">1.16.2.</span> <span class="nav-text">自定义函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#system-函数"><span class="nav-number">1.16.3.</span> <span class="nav-text">system 函数</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#awk-脚本"><span class="nav-number">1.17.</span> <span class="nav-text">awk 脚本</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -735,6 +776,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
