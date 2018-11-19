@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Linux，存储,">
+  <meta name="keywords" content="安全,">
 
 
 
@@ -79,21 +79,21 @@
 
 
 
-<meta name="description" content="磁盘和文件系统设备文件设备类型 块设备 block，存储单位“块”，代表设备 硬盘 字符设备 char，存储单位“字符”，代表设备 键盘设备文件：关联到一个设备驱动，进而能够跟与之对应硬件设备进行通信设备号码： 主设备号：major number，表示设备类型 次设备号：minor number，标识同一类型下的不同设备  硬盘接口类型 IDE SCSI SATA SAS USB  硬盘类型 机械">
-<meta name="keywords" content="Linux，存储">
+<meta name="description" content="安全机制信息安全防护的目标 保密性 完整性 可用性 可控制性 不可否认性安全防护环节 物理安全：各种设备主机，机房环境 系统安全：主机或设备的操作系统 应用安全：各种网络服务，应用程序 网络安全：对网络访问的控制，防火墙规则 数据安全：信息的备份与恢复，加密解密 管理安全：各种保障性的规则，流程，方法  安全算法安全技术 认证 授权 审计 安全通信加密算法和协议 对称加密 公钥加密 单向加密 认证">
+<meta name="keywords" content="安全">
 <meta property="og:type" content="article">
-<meta property="og:title" content="磁盘和文件系统">
-<meta property="og:url" content="http://yoursite.com/2018/10/21/Disk_Filesystem/index.html">
+<meta property="og:title" content="安全和加密">
+<meta property="og:url" content="http://yoursite.com/2018/11/18/Secure_and_Encrypt/index.html">
 <meta property="og:site_name" content="Jerry&#39;s Blog">
-<meta property="og:description" content="磁盘和文件系统设备文件设备类型 块设备 block，存储单位“块”，代表设备 硬盘 字符设备 char，存储单位“字符”，代表设备 键盘设备文件：关联到一个设备驱动，进而能够跟与之对应硬件设备进行通信设备号码： 主设备号：major number，表示设备类型 次设备号：minor number，标识同一类型下的不同设备  硬盘接口类型 IDE SCSI SATA SAS USB  硬盘类型 机械">
+<meta property="og:description" content="安全机制信息安全防护的目标 保密性 完整性 可用性 可控制性 不可否认性安全防护环节 物理安全：各种设备主机，机房环境 系统安全：主机或设备的操作系统 应用安全：各种网络服务，应用程序 网络安全：对网络访问的控制，防火墙规则 数据安全：信息的备份与恢复，加密解密 管理安全：各种保障性的规则，流程，方法  安全算法安全技术 认证 授权 审计 安全通信加密算法和协议 对称加密 公钥加密 单向加密 认证">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://user-images.githubusercontent.com/43201545/47267535-bdfb7d00-d577-11e8-999a-2e359ce6ca0c.png">
-<meta property="og:image" content="https://user-images.githubusercontent.com/43201545/47267644-63fbb700-d579-11e8-9db1-6893c9511cde.png">
-<meta property="og:updated_time" content="2018-11-11T13:55:15.210Z">
+<meta property="og:image" content="https://user-images.githubusercontent.com/43201545/48674364-3ad54300-eb86-11e8-8d19-39364155b270.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/43201545/48674395-99022600-eb86-11e8-8372-16d9dab62066.png">
+<meta property="og:updated_time" content="2018-11-18T15:09:10.069Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="磁盘和文件系统">
-<meta name="twitter:description" content="磁盘和文件系统设备文件设备类型 块设备 block，存储单位“块”，代表设备 硬盘 字符设备 char，存储单位“字符”，代表设备 键盘设备文件：关联到一个设备驱动，进而能够跟与之对应硬件设备进行通信设备号码： 主设备号：major number，表示设备类型 次设备号：minor number，标识同一类型下的不同设备  硬盘接口类型 IDE SCSI SATA SAS USB  硬盘类型 机械">
-<meta name="twitter:image" content="https://user-images.githubusercontent.com/43201545/47267535-bdfb7d00-d577-11e8-999a-2e359ce6ca0c.png">
+<meta name="twitter:title" content="安全和加密">
+<meta name="twitter:description" content="安全机制信息安全防护的目标 保密性 完整性 可用性 可控制性 不可否认性安全防护环节 物理安全：各种设备主机，机房环境 系统安全：主机或设备的操作系统 应用安全：各种网络服务，应用程序 网络安全：对网络访问的控制，防火墙规则 数据安全：信息的备份与恢复，加密解密 管理安全：各种保障性的规则，流程，方法  安全算法安全技术 认证 授权 审计 安全通信加密算法和协议 对称加密 公钥加密 单向加密 认证">
+<meta name="twitter:image" content="https://user-images.githubusercontent.com/43201545/48674364-3ad54300-eb86-11e8-8d19-39364155b270.png">
 
 
 
@@ -123,13 +123,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/10/21/Disk_Filesystem/">
+  <link rel="canonical" href="http://yoursite.com/2018/11/18/Secure_and_Encrypt/">
 
 
 
 
 
-  <title>磁盘和文件系统 | Jerry's Blog</title>
+  <title>安全和加密 | Jerry's Blog</title>
   
 
 
@@ -267,7 +267,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/21/Disk_Filesystem/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/18/Secure_and_Encrypt/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ShiJianjian">
@@ -284,7 +284,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">磁盘和文件系统</h1>
+          <h1 class="post-title" itemprop="name headline">安全和加密</h1>
         
 
         <div class="post-meta">
@@ -296,8 +296,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-21T20:15:22+08:00">
-                2018-10-21
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-18T20:08:43+08:00">
+                2018-11-18
               </time>
             
 
@@ -319,8 +319,8 @@
               
               
                 <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/系统管理/" itemprop="url" rel="index">
-                    <span itemprop="name">系统管理</span>
+                  <a href="/categories/安全/" itemprop="url" rel="index">
+                    <span itemprop="name">安全</span>
                   </a>
                 </span>
 
@@ -361,96 +361,90 @@
       
 
       
-        <h1 id="磁盘和文件系统"><a href="#磁盘和文件系统" class="headerlink" title="磁盘和文件系统"></a>磁盘和文件系统</h1><h2 id="设备文件"><a href="#设备文件" class="headerlink" title="设备文件"></a>设备文件</h2><h3 id="设备类型"><a href="#设备类型" class="headerlink" title="设备类型"></a>设备类型</h3><ul>
-<li>块设备 block，存储单位“块”，代表设备 硬盘</li>
-<li>字符设备 char，存储单位“字符”，代表设备 键盘<br>设备文件：关联到一个设备驱动，进而能够跟与之对应硬件设备进行通信<br>设备号码：</li>
-<li>主设备号：major number，表示设备类型</li>
-<li>次设备号：minor number，标识同一类型下的不同设备</li>
+        <h1 id="安全机制"><a href="#安全机制" class="headerlink" title="安全机制"></a>安全机制</h1><h2 id="信息安全防护的目标"><a href="#信息安全防护的目标" class="headerlink" title="信息安全防护的目标"></a>信息安全防护的目标</h2><ul>
+<li>保密性</li>
+<li>完整性</li>
+<li>可用性</li>
+<li>可控制性</li>
+<li>不可否认性<h2 id="安全防护环节"><a href="#安全防护环节" class="headerlink" title="安全防护环节"></a>安全防护环节</h2></li>
+<li>物理安全：各种设备主机，机房环境</li>
+<li>系统安全：主机或设备的操作系统</li>
+<li>应用安全：各种网络服务，应用程序</li>
+<li>网络安全：对网络访问的控制，防火墙规则</li>
+<li>数据安全：信息的备份与恢复，加密解密</li>
+<li>管理安全：各种保障性的规则，流程，方法</li>
 </ul>
-<h3 id="硬盘接口类型"><a href="#硬盘接口类型" class="headerlink" title="硬盘接口类型"></a>硬盘接口类型</h3><ul>
-<li>IDE</li>
-<li>SCSI</li>
-<li>SATA</li>
-<li>SAS</li>
-<li>USB</li>
+<h1 id="安全算法"><a href="#安全算法" class="headerlink" title="安全算法"></a>安全算法</h1><h2 id="安全技术"><a href="#安全技术" class="headerlink" title="安全技术"></a>安全技术</h2><ul>
+<li>认证</li>
+<li>授权</li>
+<li>审计</li>
+<li>安全通信<h2 id="加密算法和协议"><a href="#加密算法和协议" class="headerlink" title="加密算法和协议"></a>加密算法和协议</h2></li>
+<li>对称加密</li>
+<li>公钥加密</li>
+<li>单向加密</li>
+<li>认证协议</li>
 </ul>
-<h3 id="硬盘类型"><a href="#硬盘类型" class="headerlink" title="硬盘类型"></a>硬盘类型</h3><ul>
-<li>机械硬盘（HDD）</li>
-<li>固态硬盘（SSD）</li>
+<h1 id="加密算法"><a href="#加密算法" class="headerlink" title="加密算法"></a>加密算法</h1><h2 id="对称密钥加密算法"><a href="#对称密钥加密算法" class="headerlink" title="对称密钥加密算法"></a>对称密钥加密算法</h2><p>特性：</p>
+<ol>
+<li>加密和解密使用同一个密钥，效率高</li>
+<li>将原始数据分割成固定大小的块，逐个进行加密</li>
+</ol>
+<p>缺陷：</p>
+<ol>
+<li>密钥过多</li>
+<li>传输困难，密钥难以分发</li>
+<li>数据来源无法确认</li>
+</ol>
+<h3 id="加密算法-1"><a href="#加密算法-1" class="headerlink" title="加密算法"></a>加密算法</h3><ul>
+<li>DES:Data Encryption Standard，56bits</li>
+<li>3DES</li>
+<li>AES：Advanced (128, 192, 256bits)</li>
+<li>Blowfish,Twofish</li>
+<li>IDEA,RC6,CAST5</li>
 </ul>
-<h3 id="设备文件-1"><a href="#设备文件-1" class="headerlink" title="设备文件"></a>设备文件</h3><p>磁盘设备文件的命名：SCSI,SATA,SAS,IDE,USB /dev/sd</p>
-<p>不同磁盘标识：a-z,aa,ab… /dev/sda,/dev/sdb,…</p>
-<p>同一设备上的不同分区：以数字划分 1,2… /dev/sda1，/dev/sda5</p>
-<p>虚拟磁盘：/dev/vd</p>
-<h3 id="磁盘寻址方式"><a href="#磁盘寻址方式" class="headerlink" title="磁盘寻址方式"></a>磁盘寻址方式</h3><ul>
-<li>CHS </li>
+<h2 id="非对称密钥加密算法"><a href="#非对称密钥加密算法" class="headerlink" title="非对称密钥加密算法"></a>非对称密钥加密算法</h2><p>特点：</p>
+<ol>
+<li>密钥成对出现</li>
+<li>公钥(public key)公开给所有人，私钥(secret key)自己留存，必须保证其私密性</li>
+<li>用公钥加密数据，只能使用与之对应的私钥解密，反之亦然</li>
+</ol>
+<p>缺点：<br>密钥长，加密、解密效率低</p>
+<p>功能：</p>
+<ol>
+<li>数字签名：主要用于让接收方确认发送方的身份</li>
+<li>对称密钥交换：发送方用对方的公钥加密一个对称密钥后发送给对方</li>
+<li>数据加密：适合加密较小数据</li>
+</ol>
+<h3 id="加密算法-2"><a href="#加密算法-2" class="headerlink" title="加密算法"></a>加密算法</h3><ul>
+<li>RSA（用于加密，数字签名）</li>
+<li>DSA（数字签名）</li>
+<li>ELGamal</li>
 </ul>
+<h2 id="单向加密算法"><a href="#单向加密算法" class="headerlink" title="单向加密算法"></a>单向加密算法</h2><p>单向散列算法</p>
+<p>将任意数据缩小成固定大小的“指纹”<br>特点：</p>
 <ul>
-<li>采用24bit位寻址</li>
-<li>其中前8位表示head，中间6位标识sector，后面10位表示cylinder</li>
-<li>这种结构最大寻址空间为8GB</li>
+<li>任意长度输入</li>
+<li>固定长度输出</li>
+<li>若修改数据，指纹也会改变（不会产生冲突）</li>
+<li>无法从指纹中重新生成数据（单向）</li>
 </ul>
-<ul>
-<li>LBA</li>
-</ul>
-<ul>
-<li>LBA是一个整数，通过转换成CHS格式完成磁盘具体寻址</li>
-<li>ATA-1规范中定义了28位寻址模式，以每扇区512位组来计算，ATA-1所定义的28位LBA上限达到128GB。2002年ATA-6规范采用48位LBA，同样以每扇区512位组计算容量上限可达128PetaBytes。<br>在磁盘容量小于8GB时，使用CHS寻址方式或是LBA寻址方式，在磁盘容量大于8GB时，只能使用LBA寻址方式。</li>
-</ul>
-<h3 id="磁盘分区"><a href="#磁盘分区" class="headerlink" title="磁盘分区"></a>磁盘分区</h3><p>为什么要分区？</p>
-<ul>
-<li>优化I/O性能</li>
-<li>实现磁盘空间配额限制</li>
-<li>提高修复速度</li>
-<li>隔离系统和程序</li>
-<li>安装多个OS</li>
-<li>采用不同文件系统</li>
-</ul>
-<h3 id="分区结构"><a href="#分区结构" class="headerlink" title="分区结构"></a>分区结构</h3><p>分区方式：MBR, GPT</p>
-<blockquote>
-<p>MBR 分区结构<br>支持4个主分区或3个主分区+1个扩展分区（N个逻辑分区）</p>
-<ul>
-<li>硬盘主引导记录MBR由4个部分组成</li>
-<li>主引导程序（偏移地址0000H–0088H），负责从活动分区中装载，并运行系统引导程序</li>
-<li>出错信息数据区，偏移地址0089H–00E1H为出错信息，00E2H–01BDH全为0字节</li>
-<li>分区表（DPT，Disk Partition Table）含4个分区项，偏移地址01BEH–01FDH,每个分区表项长16个字节，共64字节，分别为分区项1、分区项2、分区项3、分区项4</li>
-<li>结束标志字，偏移地址01FEH–01FFH的2个字节值为结束标志55AA</li>
-</ul>
-</blockquote>
-<p><img src="https://user-images.githubusercontent.com/43201545/47267535-bdfb7d00-d577-11e8-999a-2e359ce6ca0c.png" alt="MBR"></p>
-<blockquote>
-<p>GPT 分区结构</p>
-<ul>
-<li>GPT:GUID(Globals Unique Ldentifiers) partition table支持128个分区，使用64位，支持8Z（512Byte/block）64Z（4096Byte/block）<br>使用128位UUID（Universally Unique Ldentifier）表示磁盘和分区GPT分区表自动备份在头和尾两份，并有CRC校验位<br>UEFI（同一扩展固件接口）硬件支持GPT，使操作系统启动</li>
-</ul>
-</blockquote>
-<p><img src="https://user-images.githubusercontent.com/43201545/47267644-63fbb700-d579-11e8-9db1-6893c9511cde.png" alt="GPT"></p>
-<h2 id="分区管理工具"><a href="#分区管理工具" class="headerlink" title="分区管理工具"></a>分区管理工具</h2><p>lsblk 列出块设备  </p>
-<p>创建分区</p>
-<ul>
-<li>fdisk 创建MBR分区</li>
-<li>gdisk 创建GPT分区</li>
-<li>parted 高级分区工具</li>
-</ul>
-<p>partprobe 重新设置内存中的内核分区表版本</p>
-<p>parted 用法<br>parted 操作时实时生效的，小心使用<br>用法：parted [选项]… [设备[命令[参数]…]…]<br>parted /dev/sdbmklabelgpt|msdos<br>parted /dev/sdbprint<br>parted /dev/sdbmkpartprimary 1 200 （默认M）<br>parted /dev/sdbrm1<br>parted –l 列出分区信息  </p>
-<p>fdisk 用法<br>fdisk-l [-u] [device…] 查看分区<br>fdisk/dev/sdb管理分区</p>
-<ul>
-<li>子命令：</li>
-<li>p 分区列表</li>
-<li>t 更改分区类型</li>
-<li>n 创建新分区</li>
-<li>d 删除分区</li>
-<li>v 校验分区</li>
-<li>u 转换单位</li>
-<li>w 保存并退出</li>
-<li>q 不保存并退出</li>
-</ul>
-<p>gdisk 和 fdisk 用法类似  </p>
-<p>查看内核是否已经识别新的分区<br>cat /proc/partations</p>
-<p>centos6通知内核重新读取硬盘分区表<br>新增分区用<br>partx-a /dev/DEVICE<br>kpartx-a /dev/DEVICE -f: force</p>
-<p>删除分区用<br>partx-d –nrM-N /dev/DEVICE</p>
-<p>CentOS 5，7: 使用partprobe<br>partprobe[/dev/DEVICE]</p>
+<p>功能：确保数据完整性</p>
+<h3 id="加密算法-3"><a href="#加密算法-3" class="headerlink" title="加密算法"></a>加密算法</h3><p>md5:128bits，sha1:160bit，ssh224，sha256，sha384，sha512</p>
+<h3 id="算法组合"><a href="#算法组合" class="headerlink" title="算法组合"></a>算法组合</h3><p>1、非对称<br>Pa[Sb[data]]</p>
+<p>2、非对称+hash<br>Pa[data+Sb[hash(data)]]</p>
+<p>3、对称+非对称+hash<br>key[data+Sb[hash(data)]]+Pa[key]</p>
+<h2 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h2><p>md5sum | sha1sum [–check] file</p>
+<h1 id="SSL协议"><a href="#SSL协议" class="headerlink" title="SSL协议"></a>SSL协议</h1><p>分为握手阶段和应用阶段</p>
+<p><strong>握手阶段(协商阶段):</strong> 客户端和服务器端认证对方身份（依赖于PKI体系，利用数字证书进行身份认证），并协商通信中使用的安全参数、密码套件以及主密钥。后续通信使用的所有密钥都是通过MasterSecret生成。</p>
+<p><strong>应用阶段:</strong> 在握手阶段完成后进入，在应用阶段通信双方使用握手阶段协商好的密钥进行安全通信</p>
+<p><strong>Handshake</strong>协议：包括协商安全参数和密码套件、服务器身份认证（客户端身份认证可选）、密钥交换</p>
+<p><strong>ChangeCipherSpec</strong> 协议：一条消息表明握手协议已经完成</p>
+<p><strong>Alert</strong> 协议：对握手协议中一些异常的错误提醒，分为fatal和warning两个级别，fatal类型错误会直接中断SSL链接，而warning级别的错误SSL链接仍可继续，只是会给出错误警告</p>
+<p><strong>Record</strong> 协议：包括对消息的分段、压缩、消息认证和完整性保护、加密等</p>
+<p>HTTPS 协议：就是“HTTP 协议”和“SSL/TLS 协议”的组合</p>
+<p>HTTP over SSL”或“HTTP over TLS”</p>
+<p>HTTPS结构<br><img src="https://user-images.githubusercontent.com/43201545/48674364-3ad54300-eb86-11e8-8d19-39364155b270.png" alt="image"></p>
+<p>HTTPS工作过程<br><img src="https://user-images.githubusercontent.com/43201545/48674395-99022600-eb86-11e8-8372-16d9dab62066.png" alt="image"></p>
 
       
     </div>
@@ -468,7 +462,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Linux，存储/" rel="tag"># Linux，存储</a>
+            <a href="/tags/安全/" rel="tag"># 安全</a>
           
         </div>
       
@@ -481,8 +475,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/10/13/Sed/" rel="next" title="SED 工具">
-                <i class="fa fa-chevron-left"></i> SED 工具
+              <a href="/2018/11/10/AWK/" rel="next" title="AWK">
+                <i class="fa fa-chevron-left"></i> AWK
               </a>
             
           </div>
@@ -490,10 +484,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/10/30/NetworkProtocol/" rel="prev" title="网络协议">
-                网络协议 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -635,7 +625,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#磁盘和文件系统"><span class="nav-number">1.</span> <span class="nav-text">磁盘和文件系统</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#设备文件"><span class="nav-number">1.1.</span> <span class="nav-text">设备文件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#设备类型"><span class="nav-number">1.1.1.</span> <span class="nav-text">设备类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#硬盘接口类型"><span class="nav-number">1.1.2.</span> <span class="nav-text">硬盘接口类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#硬盘类型"><span class="nav-number">1.1.3.</span> <span class="nav-text">硬盘类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设备文件-1"><span class="nav-number">1.1.4.</span> <span class="nav-text">设备文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#磁盘寻址方式"><span class="nav-number">1.1.5.</span> <span class="nav-text">磁盘寻址方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#磁盘分区"><span class="nav-number">1.1.6.</span> <span class="nav-text">磁盘分区</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分区结构"><span class="nav-number">1.1.7.</span> <span class="nav-text">分区结构</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分区管理工具"><span class="nav-number">1.2.</span> <span class="nav-text">分区管理工具</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#安全机制"><span class="nav-number">1.</span> <span class="nav-text">安全机制</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#信息安全防护的目标"><span class="nav-number">1.1.</span> <span class="nav-text">信息安全防护的目标</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安全防护环节"><span class="nav-number">1.2.</span> <span class="nav-text">安全防护环节</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安全算法"><span class="nav-number">2.</span> <span class="nav-text">安全算法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安全技术"><span class="nav-number">2.1.</span> <span class="nav-text">安全技术</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#加密算法和协议"><span class="nav-number">2.2.</span> <span class="nav-text">加密算法和协议</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#加密算法"><span class="nav-number">3.</span> <span class="nav-text">加密算法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#对称密钥加密算法"><span class="nav-number">3.1.</span> <span class="nav-text">对称密钥加密算法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#加密算法-1"><span class="nav-number">3.1.1.</span> <span class="nav-text">加密算法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#非对称密钥加密算法"><span class="nav-number">3.2.</span> <span class="nav-text">非对称密钥加密算法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#加密算法-2"><span class="nav-number">3.2.1.</span> <span class="nav-text">加密算法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#单向加密算法"><span class="nav-number">3.3.</span> <span class="nav-text">单向加密算法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#加密算法-3"><span class="nav-number">3.3.1.</span> <span class="nav-text">加密算法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#算法组合"><span class="nav-number">3.3.2.</span> <span class="nav-text">算法组合</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#工具"><span class="nav-number">3.4.</span> <span class="nav-text">工具</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#SSL协议"><span class="nav-number">4.</span> <span class="nav-text">SSL协议</span></a></li></ol></div>
             
 
           </div>

@@ -263,7 +263,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/30/NetworkProtocol/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/04/ShellProgram1/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ShiJianjian">
@@ -282,7 +282,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/10/30/NetworkProtocol/" itemprop="url">网络协议</a></h1>
+                <a class="post-title-link" href="/2018/11/04/ShellProgram1/" itemprop="url">SHELL脚本编程基础</a></h1>
         
 
         <div class="post-meta">
@@ -294,8 +294,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-30T10:45:32+08:00">
-                2018-10-30
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-04T22:04:27+08:00">
+                2018-11-04
               </time>
             
 
@@ -317,8 +317,8 @@
               
               
                 <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/网络/" itemprop="url" rel="index">
-                    <span itemprop="name">网络</span>
+                  <a href="/categories/编程/" itemprop="url" rel="index">
+                    <span itemprop="name">编程</span>
                   </a>
                 </span>
 
@@ -356,318 +356,84 @@
       
         
           
-            <h1 id="网络"><a href="#网络" class="headerlink" title="网络"></a>网络</h1><h2 id="什么是网络？"><a href="#什么是网络？" class="headerlink" title="什么是网络？"></a>什么是网络？</h2><p>网络是把各种设备连接起来，按照一定的通讯协议，进行通讯的集合。</p>
-<h2 id="网络物理拓扑结构"><a href="#网络物理拓扑结构" class="headerlink" title="网络物理拓扑结构"></a>网络物理拓扑结构</h2><ul>
-<li>总线拓扑</li>
-<li>环状拓扑</li>
-<li>星型拓扑</li>
-<li>扩展星型拓扑</li>
-<li>网状拓扑</li>
-<li>双环拓扑</li>
+            <h1 id="SHELL脚本编程"><a href="#SHELL脚本编程" class="headerlink" title="SHELL脚本编程"></a>SHELL脚本编程</h1><p>shell脚本：包含一些命令或声明，并符合一定格式的文本文件</p>
+<p>格式要求：首行shebang机制<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#!/bin/bash</span><br><span class="line">#!/usr/bin/python</span><br><span class="line">#!/usr/bin/perl</span><br></pre></td></tr></table></figure></p>
+<h2 id="shell脚本的用途有"><a href="#shell脚本的用途有" class="headerlink" title="shell脚本的用途有"></a>shell脚本的用途有</h2><ul>
+<li>自动化常用命令</li>
+<li>执行系统管理和故障排除</li>
+<li>创建简单的应用程序</li>
+<li>处理文本或文件</li>
 </ul>
-<h2 id="OSI参考模型"><a href="#OSI参考模型" class="headerlink" title="OSI参考模型"></a>OSI参考模型</h2><ol>
-<li>应用层  application</li>
-<li>表示层  persention</li>
-<li>会话层  session</li>
-<li>传输层  transport</li>
-<li>网络层  network</li>
-<li>数据链路层  data link</li>
-<li>物理层  physical</li>
-</ol>
-<h3 id="网络模型分层的意义"><a href="#网络模型分层的意义" class="headerlink" title="网络模型分层的意义"></a>网络模型分层的意义</h3><ul>
-<li>降低复杂性</li>
-<li>标准化接口</li>
-<li>简化模块化设计</li>
-<li>确保技术的互操作性</li>
-<li>加快发展速度</li>
-<li>简化教学</li>
-</ul>
-<h3 id="PDU-Protocol-Data-Unit"><a href="#PDU-Protocol-Data-Unit" class="headerlink" title="PDU Protocol Data Unit"></a>PDU Protocol Data Unit</h3><p>协议数据单元是指对等层次之间传递的数据单位</p>
-<ul>
-<li>物理层的PDU是数据位 bit</li>
-<li>数据链路层的PDU是数据帧 frame</li>
-<li>网络层的PDU是数据包 packet</li>
-<li>传输层的PDU是数据段 segment</li>
-<li>其他更高层次的PDU是消息 message</li>
-</ul>
-<h2 id="通讯模式"><a href="#通讯模式" class="headerlink" title="通讯模式"></a>通讯模式</h2><ul>
-<li>单播</li>
-<li>广播</li>
-<li>组播</li>
-</ul>
-<h2 id="LAN-组成"><a href="#LAN-组成" class="headerlink" title="LAN 组成"></a>LAN 组成</h2><ul>
-<li>计算机  </li>
-<li><ul>
-<li>PCs</li>
-</ul>
-</li>
-<li><ul>
-<li>Servers</li>
-</ul>
-</li>
-<li>网络互联</li>
-<li><ul>
-<li>NICs</li>
-</ul>
-</li>
-<li><ul>
-<li>Media</li>
-</ul>
-</li>
-<li>网络设备</li>
-<li><ul>
-<li>Hubs</li>
-</ul>
-</li>
-<li><ul>
-<li>Switches</li>
-</ul>
-</li>
-<li><ul>
-<li>Routers</li>
-</ul>
-</li>
-<li>Protocols</li>
-<li><ul>
-<li>Ethernet</li>
-</ul>
-</li>
-<li><ul>
-<li>IP</li>
-</ul>
-</li>
-<li><ul>
-<li>ARP</li>
-</ul>
-</li>
-<li><ul>
-<li>DHCP</li>
-</ul>
-</li>
-</ul>
-<h2 id="Ethernet-Frame-结构"><a href="#Ethernet-Frame-结构" class="headerlink" title="Ethernet Frame 结构"></a>Ethernet Frame 结构</h2><p><img src="https://user-images.githubusercontent.com/43201545/47615726-cad71e00-daed-11e8-9d55-4c73c1eca4be.png" alt="image"></p>
-<p>Ethernet </p>
-<ul>
-<li>preamble 8Byte</li>
-<li>Destination Address 6Byte</li>
-<li>Source Address 6Byte</li>
-<li>Type 2Byte</li>
-<li>Data 46-1500 Byte</li>
-<li>Fcs 4Byte</li>
-</ul>
-<p>IEEE 802.3</p>
-<ul>
-<li>Preamble 7Byte</li>
-<li>SOF 1Byte</li>
-<li>Destination Address 6Byte</li>
-<li>Source Address 6Byte</li>
-<li>Type 2Byte</li>
-<li>Data 46-1500 Byte</li>
-<li>Fcs 4Byte</li>
-</ul>
-<h2 id="HUB集线器"><a href="#HUB集线器" class="headerlink" title="HUB集线器"></a>HUB集线器</h2><pre><code>Hub：多端口中继器  属于物理层设备，它检查帧不是自己的就被抛弃
-Hub的特点：共享带宽，半双工     
-Hub 在网络中对每个端口都转发，flood 泛洪
-在Hub上同一时间只有一个信号在传输
-Hub 既不隔断冲突域也不隔断广播域
-</code></pre><p>冲突域：当一个主机向网络中发送报文，另一个主机也发送报文，产生冲突，两个主机在一个冲突域中<br>广播域：一个主机发送广播，另一个主机收到，两个主机在一个广播域</p>
-<h2 id="交换机-以太网桥"><a href="#交换机-以太网桥" class="headerlink" title="交换机 以太网桥"></a>交换机 以太网桥</h2><p>任何一个数据报文到达交换机都可以转发，可以转发多路信号<br>交换机能够分析帧结构，属于数据链路层设备<br>    多路信号同时可以传<br>    内置表端口满了以后就广播转发</p>
-<pre><code>交换机表中记录的是数据报文的源地址，而广播地址只能作为目标地址，永远不能成为源地址，不可能成为源地址，不能存在MAC地址表中，所以只能泛洪
-广播地址表现为 FF:FF:FF:FF:FF:FF
-广播地址不会记录在数据表，所以只能泛洪
-只能隔断冲突域，不能隔断广播域
-</code></pre><h2 id="路由器"><a href="#路由器" class="headerlink" title="路由器"></a>路由器</h2><p>路由器属于网络层</p>
-<pre><code>多播，广播都被隔断，隔断广播域
-可以做安全策略
-选择最佳路径，存放路由表，路由策略，路由算法
-连接广域网
-</code></pre><p>路由：把一个数据包从一个设备发送到不同网络里的另一个设备上去。这些工作依靠路由器来完成。路由器只关心网络的状态和决定网络中的最佳路径。路由的实现依靠路由器中的路由表来完成</p>
-<h2 id="TCP-IP-协议栈"><a href="#TCP-IP-协议栈" class="headerlink" title="TCP/IP 协议栈"></a>TCP/IP 协议栈</h2><p>Transmission Control Protocol/Internet Protocol<br>传输控制协议/因特网互联协议</p>
-<p>TCP/IP是一个Protocol Stack，包括TCP、IP、UDP、ICMP、RIP、TELNET、FTP、SMTP、ARP等许多协议</p>
-<p>共定义了四层和ISO参考模型的分层有对应关系</p>
+<h2 id="脚本规范"><a href="#脚本规范" class="headerlink" title="脚本规范"></a>脚本规范</h2><p>脚本代码开头约定</p>
 <ol>
-<li>应用层</li>
-<li>传输层</li>
-<li>Internet层</li>
-<li>网络访问层</li>
+<li>第一行一般为调用使用的语言</li>
+<li>程序名，避免更改文件名为无法找到正确的文件</li>
+<li>版本号</li>
+<li>更改后的时间</li>
+<li>作者相关信息</li>
+<li>该程序的作用，及注意事项</li>
+<li>最后是各版本的更新简要说明</li>
 </ol>
-<h3 id="TCP-特点"><a href="#TCP-特点" class="headerlink" title="TCP 特点"></a>TCP 特点</h3><ul>
-<li>工作在传输层</li>
-<li>面向连接协议</li>
-<li>全双工协议</li>
-<li>半关闭</li>
-<li>错误检查</li>
-<li>将数据打包成段，排序</li>
-<li>确认机制</li>
-<li>数据恢复，重传</li>
-<li>流量控制，滑动窗口</li>
-<li>拥塞控制，慢启动和拥塞避免算法</li>
+<h2 id="脚本的基本结构"><a href="#脚本的基本结构" class="headerlink" title="脚本的基本结构"></a>脚本的基本结构</h2><pre><code>#!SHEBANG
+CONFIGURATION_VARIABLES
+FUNCTION_DEFINITIONS
+MAIN_CODE
+</code></pre><h2 id="脚本调试"><a href="#脚本调试" class="headerlink" title="脚本调试"></a>脚本调试</h2><p>检查脚本中的语法错误</p>
+<p><code>bash -n /path/to/some_script</code></p>
+<p>调试执行</p>
+<p><code>bash -x /path/to/some_script</code></p>
+<h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><h3 id="变量命名规则"><a href="#变量命名规则" class="headerlink" title="变量命名规则"></a>变量命名规则</h3><ol>
+<li>变量名是由字母，数字，下划线组成，并且不能以数字开头</li>
+<li>变量名区分大小写</li>
+<li>不能使用程序中的关键字，例如if，for</li>
+<li>做到见名知义</li>
+<li>统一命名规范</li>
+</ol>
+<h3 id="变量作用"><a href="#变量作用" class="headerlink" title="变量作用"></a>变量作用</h3><ul>
+<li>数据存储格式</li>
+<li>参与的运算</li>
+<li>表示的数据范围</li>
 </ul>
-<h3 id="TCP-包头"><a href="#TCP-包头" class="headerlink" title="TCP 包头"></a>TCP 包头</h3><p>固定长度 20 Byte<br>（单位 bit）</p>
-<table>
-<thead>
-<tr>
-<th>源端口</th>
-<th>目的端口</th>
-<th>序号</th>
-<th>确认号</th>
-<th>数据偏移</th>
-<th>保留</th>
-<th>URG</th>
-<th>ACK</th>
-<th>PSH</th>
-<th>PST</th>
-<th>SYN</th>
-<th>FIN</th>
-<th>窗口</th>
-<th>校验和</th>
-<th>紧急指针</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>16</td>
-<td>16</td>
-<td>32</td>
-<td>32</td>
-<td>4</td>
-<td>6</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>16</td>
-<td>16</td>
-<td>16</td>
-</tr>
-</tbody>
-</table>
-<h3 id="TCP-端口号"><a href="#TCP-端口号" class="headerlink" title="TCP 端口号"></a>TCP 端口号</h3><p>用来标识每个应用程序的地址   0-65535</p>
-<p>它是基于 C/S 结构 client/server </p>
-<p>常见端口号</p>
-<pre><code>ssh C/S tcp 22
-http:tcp 80
-QQ:udp 8000
-https:tcp 443
-dhcp:tcp 67,68
-snmp:tcp 161
-mysql:tcp 3306
-oracle:tcp 1521
-sql:server:tcp 1433
-kerberos:tcp 88
-smtp:tcp 25
-pop3:tcp 110
-imap:tcp 143
-smb:tcp 445
-</code></pre><p>有限状态机 FSM:Finite State Machine</p>
-<p>状态：描述</p>
+<h3 id="变量存储类型"><a href="#变量存储类型" class="headerlink" title="变量存储类型"></a>变量存储类型</h3><p>字符<br>数值：整数</p>
+<p>弱类型语言在运行时会因是做数据类型转换。无需指定类型，默认均为字符型，参与运算会自动进行隐式类型转换；变量无须事先定义即可直接调用。</p>
+<p>bash 是一种弱类型语言，但不支持浮点数，类似语言还有如 php,javascript</p>
+<h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><ul>
+<li>变量名与等号之间，等号与变量值之间不要有空格</li>
+<li>只有在引用变量的时候，才在变量名之前加$，其他情况，比如删除、赋值、循环迭代都不用加$</li>
+<li>如果一行只有一条命令，则每一行不用以分号结尾，每一条命令以换行分隔</li>
+<li>如果一行有多条命令，则每一条命令以分号分隔，但建议每行只有一条命令</li>
+</ul>
+<h2 id="bash中变量的种类"><a href="#bash中变量的种类" class="headerlink" title="bash中变量的种类"></a>bash中变量的种类</h2><ul>
+<li>环境（全局）变量：生效范围为shell进程及其子进程</li>
+<li>局部变量：生效范围为当前shell进程，对当前shell进程之外的其他shell进程，包括当前shell进程的子进程均无效</li>
+<li>本地变量：生效范围为当前shell进程中函数内部</li>
+<li>位置变量：$1,$2,…来表示，用于让脚本在脚本代码中调用通过命令行传递给它的参数</li>
+<li>特殊变量：$?,$0,$*,$@,$#,$$</li>
+</ul>
+<h2 id="环境变量"><a href="#环境变量" class="headerlink" title="环境变量"></a>环境变量</h2><p>变量声明和赋值：</p>
+<p><code>export name=VALUE</code><br><code>declare -x name=VALUE</code></p>
+<p>变量引用：$name, ${name}</p>
+<p>显示所有环境变量：</p>
 <ul>
-<li>CLOSED：无连接是活动 的或正在进行</li>
-<li>LISTEN：服务器在等待进入呼叫</li>
-<li>SYN_RECV：一个连接请求已经到达，等待确认</li>
-<li>SYN_SENT：应用已经开始，打开一个连接</li>
-<li>ESTABLISHED：正常数据传输状态</li>
-<li>FIN_WAIT1：应用说它已经完成</li>
-<li>FIN_WAIT2：另一边已同意释放</li>
-<li>ITMED_WAIT：等待所有分组死掉</li>
-<li>CLOSING：两边同时尝试关闭</li>
-<li>TIME_WAIT：另一边已初始化一个释放</li>
-<li>LAST_ACK：等待所有分组死掉</li>
+<li>env</li>
+<li>printenv</li>
+<li>export</li>
+<li>declare -x</li>
 </ul>
-<h3 id="TCP-三次握手"><a href="#TCP-三次握手" class="headerlink" title="TCP 三次握手"></a>TCP 三次握手</h3><p>TCP 建立连接需要同步，确认三次，俗称三次握手<br><img src="https://user-images.githubusercontent.com/43201545/47616883-56a47680-dafd-11e8-9273-203e98c8723e.png" alt="image"></p>
-<h3 id="TCP-四次挥手"><a href="#TCP-四次挥手" class="headerlink" title="TCP 四次挥手"></a>TCP 四次挥手</h3><p>TCP 断开连接需要四次请求，确认，四次挥手<br><img src="https://user-images.githubusercontent.com/43201545/47617203-dfbcad00-daff-11e8-91ab-d8ba27e75bcd.png" alt="image"></p>
-<h3 id="sync半连接和accept全连接队列"><a href="#sync半连接和accept全连接队列" class="headerlink" title="sync半连接和accept全连接队列"></a>sync半连接和accept全连接队列</h3><p><img src="https://user-images.githubusercontent.com/43201545/47617252-37f3af00-db00-11e8-896a-559e929b82e7.png" alt="image"></p>
-<h3 id="UDP-特性"><a href="#UDP-特性" class="headerlink" title="UDP 特性"></a>UDP 特性</h3><ul>
-<li>工作在传输层</li>
-<li>提供不可靠的网络访问</li>
-<li>非面向连接协议</li>
-<li>有限的错误检查</li>
-<li>传输性能高</li>
-<li>无数据恢复特性</li>
-</ul>
-<h3 id="UDP包头"><a href="#UDP包头" class="headerlink" title="UDP包头"></a>UDP包头</h3><p>（单位 bit）</p>
-<table>
-<thead>
-<tr>
-<th>源地址</th>
-<th>目标地址</th>
-<th>UDP 长度</th>
-<th>UDP 校验和</th>
-<th>数据</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>16</td>
-<td>16</td>
-<td>16</td>
-<td>16</td>
-</tr>
-</tbody>
-</table>
-<h3 id="InternetProtocol-特性"><a href="#InternetProtocol-特性" class="headerlink" title="InternetProtocol 特性"></a>InternetProtocol 特性</h3><ul>
-<li>运行于OSI网络层</li>
-<li>面向无连接的协议</li>
-<li>独立处理数据包</li>
-<li>分层编址</li>
-<li>尽力而为传输</li>
-<li>无数据恢复功能</li>
-</ul>
-<h3 id="IP-协议报头"><a href="#IP-协议报头" class="headerlink" title="IP 协议报头"></a>IP 协议报头</h3><p>固定部分 20 Byte<br>(单位 bit)</p>
-<table>
-<thead>
-<tr>
-<th>版本</th>
-<th>首部长度</th>
-<th>区分服务</th>
-<th>总长度</th>
-<th>标识</th>
-<th>标志</th>
-<th>片偏移</th>
-<th>生存时间</th>
-<th>协议</th>
-<th>首部检验和</th>
-<th>源地址</th>
-<th>目的地址</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>4</td>
-<td>4</td>
-<td>8</td>
-<td>16</td>
-<td>16</td>
-<td>3</td>
-<td>13</td>
-<td>8</td>
-<td>8</td>
-<td>16</td>
-<td>32</td>
-<td>32</td>
-</tr>
-</tbody>
-</table>
-<h2 id="路由"><a href="#路由" class="headerlink" title="路由"></a>路由</h2><p>路由器是单向设备<br>    路由表 决定了如何选择一条路径，把收到的数据报文转发到目标主机的所在地</p>
-<pre><code>    route -n （Linux命令）
-    rout print （Windows命令）
+<p>删除变量：<br><code>unset name</code></p>
+<h2 id="局部变量"><a href="#局部变量" class="headerlink" title="局部变量"></a>局部变量</h2><p>变量赋值：</p>
+<p><code>name=&#39;VALUE&#39;</code></p>
+<ol>
+<li>直接是字符串：name=”root”</li>
+<li>变量引用：name=”$USER”</li>
+<li>命令引用：name=`COMMAND`,name=$(COMMAND)</li>
+</ol>
+<p>变量引用：</p>
+<p>${name},$name</p>
+<p>“”：弱引用，其中的变量引用会被替换为变量值<br>‘’：强引用，其中的变量引用不会被替换为变量值，而保持原字符串</p>
+<p>显示已定义的所有变量：set</p>
+<p>删除变量：unset name</p>
 
-目标网络ID：目标IP所在网络ID
-接口：本设备要发送数据包到目标，从那个接口发送出来，才能到达
-网关：到达目标网络，需要将数据交给下一个路口哪个接口的对应的IP
-
-主机路由 192.168.32.100/32  优先级高于网络路由
-网络路由 192.168.64.0/19  优先级次之
-默认路由 0,0,0,0/0  优先级最低
-
-添加默认网关的目的就是为了生成默认路由
-</code></pre><p>动态路由</p>
-<pre><code>RIP OSPF BGP ISIS路由协议
-RIP 经过的路由器数量越少，就认为最优
-OSPF 会考虑带宽
-</code></pre>
           
         
       
@@ -706,7 +472,7 @@ OSPF 会考虑带宽
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/3/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><span class="space">&hellip;</span><a class="page-number" href="/page/10/">10</a><a class="extend next" rel="next" href="/page/5/"><i class="fa fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" href="/page/3/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><span class="space">&hellip;</span><a class="page-number" href="/page/11/">11</a><a class="extend next" rel="next" href="/page/5/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -752,7 +518,7 @@ OSPF 会考虑带宽
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -763,7 +529,7 @@ OSPF 会考虑带宽
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -774,7 +540,7 @@ OSPF 会考虑带宽
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
