@@ -263,7 +263,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/25/PhysicalLink_SymbolicLink/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/07/UserMode/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ShiJianjian">
@@ -282,7 +282,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/09/25/PhysicalLink_SymbolicLink/" itemprop="url">硬链接与软连接</a></h1>
+                <a class="post-title-link" href="/2018/10/07/UserMode/" itemprop="url">用户和组的权限管理</a></h1>
         
 
         <div class="post-meta">
@@ -294,8 +294,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-25T11:46:24+08:00">
-                2018-09-25
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-07T19:25:54+08:00">
+                2018-10-07
               </time>
             
 
@@ -317,8 +317,8 @@
               
               
                 <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/文件管理/" itemprop="url" rel="index">
-                    <span itemprop="name">文件管理</span>
+                  <a href="/categories/系统管理/" itemprop="url" rel="index">
+                    <span itemprop="name">系统管理</span>
                   </a>
                 </span>
 
@@ -356,71 +356,19 @@
       
         
           
-            <h1 id="硬链接和软连接的区别"><a href="#硬链接和软连接的区别" class="headerlink" title="硬链接和软连接的区别"></a>硬链接和软连接的区别</h1><p>Linux系统中有硬链接和软链接之分，它们之间究竟什么区别呢，今天在这里总结以下，如有遗漏，不吝赐教。</p>
-<p>分析硬链接与软连接的区别，可以从以下8个方面思考，</p>
-<ol>
-<li>是否是同一文件</li>
-<li>是否支持跨分区</li>
-<li>链接数是否增长</li>
-<li>结点号是否相同</li>
-<li>原始文件删除，链接文件可否访问</li>
-<li>链接文件的大小</li>
-<li>是否支持目录</li>
-<li>是否支持相对路径</li>
-</ol>
-<table>
-<thead>
-<tr>
-<th>不同点</th>
-<th>硬链接</th>
-<th>软连接</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>是否指向同一文件</td>
-<td>与原文件是同一个文件，表示一个文件起多个文件名</td>
-<td>与原文件是不同文件</td>
-</tr>
-<tr>
-<td>是否可以跨分区</td>
-<td>不支持跨分区</td>
-<td>支持跨分区</td>
-</tr>
-<tr>
-<td>链接数是否增长</td>
-<td>链接数增加</td>
-<td>链接数不增加</td>
-</tr>
-<tr>
-<td>inode number 是否相同</td>
-<td>相同</td>
-<td>不同</td>
-</tr>
-<tr>
-<td>原文件删除，链接文件是否可以访问</td>
-<td>可以</td>
-<td>不可以</td>
-</tr>
-<tr>
-<td>链接文件与原文件的大小</td>
-<td>与原文件大小相同</td>
-<td>文件较小，文件大小是路径的大小</td>
-</tr>
-<tr>
-<td>是否支持目录</td>
-<td>不支持链接到目录</td>
-<td>支持链接到目录</td>
-</tr>
-<tr>
-<td>文件名支持的相对路径不同</td>
-<td>硬链接支持的相对路径是相对于当前工作目录</td>
-<td>软连接支持相对路径相对于链接目录</td>
-</tr>
-</tbody>
-</table>
-<h1 id="mv命令和ln-s-的区别"><a href="#mv命令和ln-s-的区别" class="headerlink" title="mv命令和ln -s 的区别"></a>mv命令和ln -s 的区别</h1><p>例 mv /dir1/f1 /dir2/f2<br>mv 命令底层工作原理分为两种情况：<br>1、/dir1 /dir2 在同一分区：mv 命令用新的文件名f2创建对应新的目录项，删除f1目录条目对应的旧的文件名，不影响f1 inode表（除时间戳）或磁盘上的数据位置，数据没有被移动。<br>2、/dir1 /dir2 在不同分区：在目标分区分配一个空闲的inode号，在inode表中生成新条目，在目录中创建一个目录项，将文件名f2与inode编号关联，拷贝f1数据到目标分区生成新的文件。释放源分区f1的inode号，以备重用，链接数递减，把数据块放在空闲列表中，删除源目录项。</p>
-<p>例 ln -s /dir1/f1 /dir2/f2<br>ln -s 符号链接底层工作原理不区分是否在同一分区：<br>分配一个新的inode号，inode表中生成新条目，在目录中创建一个目录项，将文件名f2与inode号关联，数据不移动，f2的内容时它引用的f1的路径，f1的inode号不变，f1的链接数不增加或减少。</p>
+            <h1 id="用户和组的权限管理"><a href="#用户和组的权限管理" class="headerlink" title="用户和组的权限管理"></a>用户和组的权限管理</h1><h2 id="Linux的安全模型"><a href="#Linux的安全模型" class="headerlink" title="Linux的安全模型"></a>Linux的安全模型</h2><ul>
+<li>Authentication:认证</li>
+<li>Authorization:授权</li>
+<li>Accouting|Audition:审计</li>
+</ul>
+<h2 id="用户-user"><a href="#用户-user" class="headerlink" title="用户 user"></a>用户 user</h2><p>Liunx用户：Username/UID<br>管理员 root<br>普通用户<br>&emsp;&emsp;系统用户<br>&emsp;&emsp;登录用户<br>用户标识：UserID，UID<br>&emsp;&emsp;管理员：0<br>&emsp;&emsp;普通用户：1-60000<br>&emsp;&emsp;系统用户：1-499（CentOS6），1-999（CentOS7）<br>&emsp;&emsp;登录用户：500-60000（CentOS6），1000-60000（CentOS7）  </p>
+<p>管理员组：root<br>普通用户组<br>&emsp;&emsp;系统组<br>&emsp;&emsp;登录组<br>组标识：GroupID，GID<br>&emsp;&emsp;系统用户：1-499（CentOS6），1-999（CentOS7）<br>&emsp;&emsp;登录用户：500-60000（CentOS6），1000-60000（CentOS7）</p>
+<h2 id="Linux安全上下文"><a href="#Linux安全上下文" class="headerlink" title="Linux安全上下文"></a>Linux安全上下文</h2><p>运行中的程序：进程（process）<br>进程所能够访问资源的权限取决于进程的运行者的身份。  </p>
+<h3 id="Linux用户和组的主要配置文件："><a href="#Linux用户和组的主要配置文件：" class="headerlink" title="Linux用户和组的主要配置文件："></a>Linux用户和组的主要配置文件：</h3><p>/etc/passwd：用户及其属性信息(名称、UID、主组ID等）<br>/etc/group：组及其属性信息<br>/etc/shadow：用户密码及其相关属性<br>/etc/gshadow：组密码及其相关属性  </p>
+<h4 id="passwd-文件格式"><a href="#passwd-文件格式" class="headerlink" title="passwd 文件格式"></a>passwd 文件格式</h4><p>name:password:UID:GID:GECOS:directory:shell<br>name:登录用户（wang）<br>passwd:密码（x）<br>UID:用户省份编号（1000）<br>GID:登录默认所在组编号（1000）<br>GECOS:用户全名或注释<br>directory:用户的家目录<br>shell:用户的默认shell，登录式默认shell程序</p>
+<h4 id="shadow-文件格式"><a href="#shadow-文件格式" class="headerlink" title="shadow 文件格式"></a>shadow 文件格式</h4><p>sjj:$6$dsxVEfA9$3Pyz8di/Gr3hfKTzfY/DxyGrd/OnJK0pe51hjnK88SALBT.40pV4urYBKBDSuYt9i/fsFPzwIVmxonHkgXMo/.:17798:0:99999:7:::<br>用户名：用户密码，一般用sha512加密：最近一次修改密码的时间（天数，从1970年1月1日算起）：密码最短使用期限（0表示随时可被改变）：密码最长使用期限（99999表示永不过期）：密码过期警告期限（默认7天）：密码过期几天后账号会被锁定：账号有效期限（从1970年1月1日算起）：保留</p>
+<h4 id="group-文件格式"><a href="#group-文件格式" class="headerlink" title="group 文件格式"></a>group 文件格式</h4><p>group_name:password:GID:user_list<br>组名称：组密码：组的ID：以当前组为附加组的用户列表（分隔符为逗号）</p>
+<h4 id="gshadow-文件格式"><a href="#gshadow-文件格式" class="headerlink" title="gshadow 文件格式"></a>gshadow 文件格式</h4><p>组名称：组密码：组管理员的列表，更改组密码和成员：以当前组为附加组的用户列表</p>
 
           
         
@@ -460,7 +408,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/8/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><span class="page-number current">9</span><a class="page-number" href="/page/10/">10</a><a class="page-number" href="/page/11/">11</a><a class="extend next" rel="next" href="/page/10/"><i class="fa fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" href="/page/8/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><span class="page-number current">9</span><a class="page-number" href="/page/10/">10</a><span class="space">&hellip;</span><a class="page-number" href="/page/12/">12</a><a class="extend next" rel="next" href="/page/10/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -506,7 +454,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-count">12</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -589,7 +537,7 @@
 
         
 <div class="busuanzi-count">
-  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
   
     <span class="site-uv">
