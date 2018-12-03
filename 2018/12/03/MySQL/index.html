@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Linux，用户权限,">
+  <meta name="keywords" content="database,">
 
 
 
@@ -79,18 +79,20 @@
 
 
 
-<meta name="description" content="用户和组的权限管理Linux的安全模型 Authentication:认证 Authorization:授权 Accouting|Audition:审计  用户 userLiunx用户：Username/UID管理员 root普通用户&amp;emsp;&amp;emsp;系统用户&amp;emsp;&amp;emsp;登录用户用户标识：UserID，UID&amp;emsp;&amp;emsp;管理员：0&amp;emsp;&amp;emsp;普通用户：1-">
-<meta name="keywords" content="Linux，用户权限">
+<meta name="description" content="MySQL数据库MySQL属于C/S架构 联系的类型 一对一(1:1) 一对多(1:n) 多对多(m:n)  数据完整性规则 实体（行）完整性 域（列）完整性 参照完整性  设计范式数据库范式主要⽤于消除数据冗余，更新异常，插⼊异常和删除异常。 ⽬前关系数据库有六种范式：  第⼀范式（1NF） 、第⼆范式（2NF） 、第三范式（3NF） 、巴斯-科德范式（BCNF） 、第四范式(4NF） 和第五范">
+<meta name="keywords" content="database">
 <meta property="og:type" content="article">
-<meta property="og:title" content="用户和组的权限管理">
-<meta property="og:url" content="http://yoursite.com/2018/10/07/UserMode/index.html">
+<meta property="og:title" content="MySQL">
+<meta property="og:url" content="http://yoursite.com/2018/12/03/MySQL/index.html">
 <meta property="og:site_name" content="Jerry&#39;s Blog">
-<meta property="og:description" content="用户和组的权限管理Linux的安全模型 Authentication:认证 Authorization:授权 Accouting|Audition:审计  用户 userLiunx用户：Username/UID管理员 root普通用户&amp;emsp;&amp;emsp;系统用户&amp;emsp;&amp;emsp;登录用户用户标识：UserID，UID&amp;emsp;&amp;emsp;管理员：0&amp;emsp;&amp;emsp;普通用户：1-">
+<meta property="og:description" content="MySQL数据库MySQL属于C/S架构 联系的类型 一对一(1:1) 一对多(1:n) 多对多(m:n)  数据完整性规则 实体（行）完整性 域（列）完整性 参照完整性  设计范式数据库范式主要⽤于消除数据冗余，更新异常，插⼊异常和删除异常。 ⽬前关系数据库有六种范式：  第⼀范式（1NF） 、第⼆范式（2NF） 、第三范式（3NF） 、巴斯-科德范式（BCNF） 、第四范式(4NF） 和第五范">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-11-11T13:56:28.683Z">
+<meta property="og:image" content="https://user-images.githubusercontent.com/43201545/49340342-5efe4d00-f679-11e8-8db8-3b1605bea23c.png">
+<meta property="og:updated_time" content="2018-12-03T05:58:12.020Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="用户和组的权限管理">
-<meta name="twitter:description" content="用户和组的权限管理Linux的安全模型 Authentication:认证 Authorization:授权 Accouting|Audition:审计  用户 userLiunx用户：Username/UID管理员 root普通用户&amp;emsp;&amp;emsp;系统用户&amp;emsp;&amp;emsp;登录用户用户标识：UserID，UID&amp;emsp;&amp;emsp;管理员：0&amp;emsp;&amp;emsp;普通用户：1-">
+<meta name="twitter:title" content="MySQL">
+<meta name="twitter:description" content="MySQL数据库MySQL属于C/S架构 联系的类型 一对一(1:1) 一对多(1:n) 多对多(m:n)  数据完整性规则 实体（行）完整性 域（列）完整性 参照完整性  设计范式数据库范式主要⽤于消除数据冗余，更新异常，插⼊异常和删除异常。 ⽬前关系数据库有六种范式：  第⼀范式（1NF） 、第⼆范式（2NF） 、第三范式（3NF） 、巴斯-科德范式（BCNF） 、第四范式(4NF） 和第五范">
+<meta name="twitter:image" content="https://user-images.githubusercontent.com/43201545/49340342-5efe4d00-f679-11e8-8db8-3b1605bea23c.png">
 
 
 
@@ -120,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/10/07/UserMode/">
+  <link rel="canonical" href="http://yoursite.com/2018/12/03/MySQL/">
 
 
 
 
 
-  <title>用户和组的权限管理 | Jerry's Blog</title>
+  <title>MySQL | Jerry's Blog</title>
   
 
 
@@ -264,7 +266,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/07/UserMode/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/03/MySQL/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ShiJianjian">
@@ -281,7 +283,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">用户和组的权限管理</h1>
+          <h1 class="post-title" itemprop="name headline">MySQL</h1>
         
 
         <div class="post-meta">
@@ -293,8 +295,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-07T19:25:54+08:00">
-                2018-10-07
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-03T08:59:00+08:00">
+                2018-12-03
               </time>
             
 
@@ -316,8 +318,8 @@
               
               
                 <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/系统管理/" itemprop="url" rel="index">
-                    <span itemprop="name">系统管理</span>
+                  <a href="/categories/数据库/" itemprop="url" rel="index">
+                    <span itemprop="name">数据库</span>
                   </a>
                 </span>
 
@@ -358,19 +360,117 @@
       
 
       
-        <h1 id="用户和组的权限管理"><a href="#用户和组的权限管理" class="headerlink" title="用户和组的权限管理"></a>用户和组的权限管理</h1><h2 id="Linux的安全模型"><a href="#Linux的安全模型" class="headerlink" title="Linux的安全模型"></a>Linux的安全模型</h2><ul>
-<li>Authentication:认证</li>
-<li>Authorization:授权</li>
-<li>Accouting|Audition:审计</li>
+        <h2 id="MySQL数据库"><a href="#MySQL数据库" class="headerlink" title="MySQL数据库"></a>MySQL数据库</h2><p>MySQL属于C/S架构</p>
+<h3 id="联系的类型"><a href="#联系的类型" class="headerlink" title="联系的类型"></a>联系的类型</h3><ul>
+<li>一对一(1:1)</li>
+<li>一对多(1:n)</li>
+<li>多对多(m:n)</li>
 </ul>
-<h2 id="用户-user"><a href="#用户-user" class="headerlink" title="用户 user"></a>用户 user</h2><p>Liunx用户：Username/UID<br>管理员 root<br>普通用户<br>&emsp;&emsp;系统用户<br>&emsp;&emsp;登录用户<br>用户标识：UserID，UID<br>&emsp;&emsp;管理员：0<br>&emsp;&emsp;普通用户：1-60000<br>&emsp;&emsp;系统用户：1-499（CentOS6），1-999（CentOS7）<br>&emsp;&emsp;登录用户：500-60000（CentOS6），1000-60000（CentOS7）  </p>
-<p>管理员组：root<br>普通用户组<br>&emsp;&emsp;系统组<br>&emsp;&emsp;登录组<br>组标识：GroupID，GID<br>&emsp;&emsp;系统用户：1-499（CentOS6），1-999（CentOS7）<br>&emsp;&emsp;登录用户：500-60000（CentOS6），1000-60000（CentOS7）</p>
-<h2 id="Linux安全上下文"><a href="#Linux安全上下文" class="headerlink" title="Linux安全上下文"></a>Linux安全上下文</h2><p>运行中的程序：进程（process）<br>进程所能够访问资源的权限取决于进程的运行者的身份。  </p>
-<h3 id="Linux用户和组的主要配置文件："><a href="#Linux用户和组的主要配置文件：" class="headerlink" title="Linux用户和组的主要配置文件："></a>Linux用户和组的主要配置文件：</h3><p>/etc/passwd：用户及其属性信息(名称、UID、主组ID等）<br>/etc/group：组及其属性信息<br>/etc/shadow：用户密码及其相关属性<br>/etc/gshadow：组密码及其相关属性  </p>
-<h4 id="passwd-文件格式"><a href="#passwd-文件格式" class="headerlink" title="passwd 文件格式"></a>passwd 文件格式</h4><p>name:password:UID:GID:GECOS:directory:shell<br>name:登录用户（wang）<br>passwd:密码（x）<br>UID:用户省份编号（1000）<br>GID:登录默认所在组编号（1000）<br>GECOS:用户全名或注释<br>directory:用户的家目录<br>shell:用户的默认shell，登录式默认shell程序</p>
-<h4 id="shadow-文件格式"><a href="#shadow-文件格式" class="headerlink" title="shadow 文件格式"></a>shadow 文件格式</h4><p>sjj:$6$dsxVEfA9$3Pyz8di/Gr3hfKTzfY/DxyGrd/OnJK0pe51hjnK88SALBT.40pV4urYBKBDSuYt9i/fsFPzwIVmxonHkgXMo/.:17798:0:99999:7:::<br>用户名：用户密码，一般用sha512加密：最近一次修改密码的时间（天数，从1970年1月1日算起）：密码最短使用期限（0表示随时可被改变）：密码最长使用期限（99999表示永不过期）：密码过期警告期限（默认7天）：密码过期几天后账号会被锁定：账号有效期限（从1970年1月1日算起）：保留</p>
-<h4 id="group-文件格式"><a href="#group-文件格式" class="headerlink" title="group 文件格式"></a>group 文件格式</h4><p>group_name:password:GID:user_list<br>组名称：组密码：组的ID：以当前组为附加组的用户列表（分隔符为逗号）</p>
-<h4 id="gshadow-文件格式"><a href="#gshadow-文件格式" class="headerlink" title="gshadow 文件格式"></a>gshadow 文件格式</h4><p>组名称：组密码：组管理员的列表，更改组密码和成员：以当前组为附加组的用户列表</p>
+<h3 id="数据完整性规则"><a href="#数据完整性规则" class="headerlink" title="数据完整性规则"></a>数据完整性规则</h3><ul>
+<li>实体（行）完整性</li>
+<li>域（列）完整性</li>
+<li>参照完整性</li>
+</ul>
+<h2 id="设计范式"><a href="#设计范式" class="headerlink" title="设计范式"></a>设计范式</h2><p>数据库范式主要⽤于消除数据冗余，更新异常，插⼊异常和删除异常。</p>
+<p>⽬前关系数据库有六种范式：</p>
+<p> 第⼀范式（1NF） 、第⼆范式（2NF） 、第三范式（3NF） 、巴斯-科德范式（BCNF） 、第四范式(4NF） 和第五范式（5NF，⼜称完美范式）。</p>
+<ul>
+<li><p>1NF：无重复的列，每一列都是不可分割的基本数据项，同一列中不能有多个值，即实体中的某个属性不能有多个值或者不能有重复的属性。除去同类型的字段，就是无重复的列<br>说明：第一范式（1NF）是对关系模式的基本要求，不满足第一范式（1NF）的数据库就不是关系数据库</p>
+</li>
+<li><p>2NF：在1NF的基础上，所有的⾮主属性必须完全依赖于主属性（主键）。<br>属性完全依赖于主键，第二范式必须先满足第一范式，要求表中的每个行必须可以被唯一地区分。通常为表加上一个列，以存储各个实例的唯一标识PK，非PK的字段需要与整个PK有直接相关性</p>
+</li>
+<li><p>3NF：在2NF基础上，表中的⾮主属性字段不能依赖于其他的⾮主属性字段，否则新建表。<br>属性不依赖于其它非主属性，满足第三范式必须先满足第二范式。第三范式要求一个数据库表中不包含已在其它表中已包含的非主关键字信息，非PK的字段间不能有从属关系</p>
+</li>
+<li><p>BCNF：在3NF基础上，任何⾮主属性不能对主键⼦集依赖。</p>
+</li>
+<li><p>4NF：在3NF基础上 表中不能包含⼀个实体的两个或多个互相独⽴的多值因⼦。<br>⽐如移动电话和固定电话 ,两个相互独⽴，有些⼈有多个移动电话或固定电话,存在⼀个表中违反4NF,应该新建表。</p>
+</li>
+<li><p>5NF：在4NF基础上，表必须可以分解为较⼩的表，除⾮那些表在逻辑上拥有与原始表相同的主键。<br>例如供销表(产品，销售，供货商)可能会产⽣冗余，应该分解成销售表(销售，产品)，供货表(销售，供货商)，产品表((供货商，<br>产品)</p>
+</li>
+</ul>
+<h2 id="约束"><a href="#约束" class="headerlink" title="约束"></a>约束</h2><p>约束：constraint，表中的数据要遵守的限制</p>
+<ul>
+<li>主键：一个或多个字段的组合，填入的数据必须能在本表中唯一标识本行；必须提供数据，即NOT NULL，一个表只能有一个</li>
+<li>惟一键：一个或多个字段的组合，填入的数据必须能在本表中唯一标识本行；允许为NULL，一个表可以存在多个</li>
+<li>外键：一个表中的某字段可填入的数据取决于另一个表的主键或唯一键已有的数据</li>
+<li>检查：字段值在一定范围内</li>
+</ul>
+<h2 id="MySQL体系结构"><a href="#MySQL体系结构" class="headerlink" title="MySQL体系结构"></a>MySQL体系结构</h2><p><img src="https://user-images.githubusercontent.com/43201545/49340342-5efe4d00-f679-11e8-8db8-3b1605bea23c.png" alt="image"></p>
+<h2 id="MySQL存储引擎"><a href="#MySQL存储引擎" class="headerlink" title="MySQL存储引擎"></a>MySQL存储引擎</h2><ul>
+<li>MyISAM</li>
+<li>Memory</li>
+<li>InnoDB</li>
+<li>Archive</li>
+<li>NDB</li>
+<li>OQGraph</li>
+<li>SphinxSE</li>
+<li>TokuDB</li>
+<li>Cassandra</li>
+<li>CONNECT</li>
+<li>SQUENCE</li>
+</ul>
+<h2 id="MyISAM-与-InnoDB"><a href="#MyISAM-与-InnoDB" class="headerlink" title="MyISAM 与 InnoDB"></a>MyISAM 与 InnoDB</h2><p> <strong>MyISAM</strong></p>
+<ul>
+<li>不支持事务</li>
+<li>表级锁</li>
+<li>读写阻塞，写入时不能读，读出时不能写</li>
+<li>只缓存索引不缓存数据</li>
+<li>索引与数据分离存储</li>
+<li>不支持外键约束</li>
+<li>不支持聚簇索引</li>
+<li>占用资源少，读取速度快</li>
+<li>不支持MVCC（多版本并发控制机制）高并发</li>
+<li>崩溃恢复性较差</li>
+<li>MySQL5.5.5前默认的数据库引擎</li>
+</ul>
+<p>MyISAM存储引擎使用场景：<br>读较多，表较小</p>
+<p>MyISAM引擎文件</p>
+<ul>
+<li>tbl_name.frm  表格式定义</li>
+<li>tbl_name.MYD  数据文件</li>
+<li>tbl_name.MYI  索引文件</li>
+</ul>
+<p><strong>InnoDB</strong></p>
+<ul>
+<li>支持事务</li>
+<li>行级锁，锁的粒度小，并发性影响小</li>
+<li>读写阻塞与事务隔离级别相关</li>
+<li>即缓存索引又缓存数据</li>
+<li>索引与数据存储在同一文件（ibd）</li>
+<li>支持外键约束</li>
+<li>支持聚簇索引</li>
+<li>支持MVCC高并发</li>
+<li>崩溃恢复性更好</li>
+<li>MySQL5.5后支持全文索引</li>
+<li>MySQL5.5.5开始成为默认的数据库引擎</li>
+</ul>
+<p>InnoDB引擎文件</p>
+<ul>
+<li>tbl_name.frm  表格式文件</li>
+<li>tbl_name.ibd  数据文件（存储数据和索引）</li>
+</ul>
+<p>MySQL中的系统数据库</p>
+<p>mysql数据库：MySQL的核心数据库，主要负责存储数据库的用户、权限设置、关键字等MySQL自己需要使用的控制和管理信息</p>
+<p>performance_schema数据库：主要用于收集数据库服务器性能参数，库里表的存储引擎均为performance_schema,用户不能创建存储引擎为performance_schema的表</p>
+<p>information_schema数据库：是一个虚拟数据库，物理上并不存在，它类似于“数据字典”，提供了访问数据库元数据的方式，即数据的数据。比如数据库名或表名，列类型，访问权限</p>
+<h2 id="DDL语言"><a href="#DDL语言" class="headerlink" title="DDL语言"></a>DDL语言</h2><h3 id="创建数据库"><a href="#创建数据库" class="headerlink" title="创建数据库"></a>创建数据库</h3><p>CREATE DATABASE|SCHEMA [IF NOT EXISTS] ‘DB_NAME’;<br>CHARACTER SET ‘character set name’<br>COLLATE ‘collate name’</p>
+<p><code>create database studentdb;</code></p>
+<h3 id="删除数据库"><a href="#删除数据库" class="headerlink" title="删除数据库"></a>删除数据库</h3><p>DROP DATABASE|SCHEMA [IF EXISTS] ‘DB_NAME’;<br><code>drop database testdb;</code></p>
+<h3 id="创建表"><a href="#创建表" class="headerlink" title="创建表"></a>创建表</h3><p>CREATE TABLE [IF NOT EXISTS] ‘tbl_name’ (col1 type1 修饰符, col2 type2 修饰符, …)</p>
+<p><code>create table student (id int unsigned auto_increment primary key,name varchar(10) not null,gender enum(&#39;f&#39;,&#39;m&#39;) default &#39;m&#39;,age tinyint unsinged,mobile char(10),address varchar(50));</code></p>
+<p>通过查询现存表创建；新表会被直接插入查询而来的数据<br>CREATE [TEMPORARY] TABLE [IF NOT EXISTS] tbl_name [(create_definition,…)] [table_options]<br>[partition_options] select_statement</p>
+<p><code>create table employee select * from student;</code></p>
+<p>通过复制现存的表的表结构创建，但不复制数据<br>CREATE [TEMPORARY] TABLE [IF NOT EXISTS] tbl_name { LIKE old_tbl_name | (LIKE old_tbl_name) }</p>
+<p><code>create table custom like student;</code></p>
+<p>查看所有的引擎：SHOW ENGINES</p>
+<p>查看表：SHOW TABLES [FROM db_name]</p>
+<p>查看表结构：DESC [db_name.]tb_name<br>SHOW COLUMNS FROM [db_name.]tb_name<br><code></code>show columns from student;</p>
+<p>删除表：DROP TABLE [IF EXISTS] tb_name</p>
+<p>查看表创建命令：SHOW CREATE TABLE tbl_name</p>
+<p>查看表状态：SHOW TABLE STATUS LIKE ‘tbl_name’</p>
+<p>查看库中所有表状态：SHOW TABLE STATUS FROM db_name</p>
+<p>查看表上的索引：SHOW INDEXES FROM [db_name.]tbl_name;</p>
+<p>查看帮助：Help ALTER TABLE</p>
 
       
     </div>
@@ -388,7 +488,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Linux，用户权限/" rel="tag"># Linux，用户权限</a>
+            <a href="/tags/database/" rel="tag"># database</a>
           
         </div>
       
@@ -401,8 +501,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/09/25/PhysicalLink_SymbolicLink/" rel="next" title="硬链接与软连接">
-                <i class="fa fa-chevron-left"></i> 硬链接与软连接
+              <a href="/2018/11/25/DNS/" rel="next" title="DNS">
+                <i class="fa fa-chevron-left"></i> DNS
               </a>
             
           </div>
@@ -410,10 +510,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/10/13/Sed/" rel="prev" title="SED 工具">
-                SED 工具 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -557,7 +653,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#用户和组的权限管理"><span class="nav-number">1.</span> <span class="nav-text">用户和组的权限管理</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Linux的安全模型"><span class="nav-number">1.1.</span> <span class="nav-text">Linux的安全模型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#用户-user"><span class="nav-number">1.2.</span> <span class="nav-text">用户 user</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Linux安全上下文"><span class="nav-number">1.3.</span> <span class="nav-text">Linux安全上下文</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Linux用户和组的主要配置文件："><span class="nav-number">1.3.1.</span> <span class="nav-text">Linux用户和组的主要配置文件：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#passwd-文件格式"><span class="nav-number">1.3.1.1.</span> <span class="nav-text">passwd 文件格式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#shadow-文件格式"><span class="nav-number">1.3.1.2.</span> <span class="nav-text">shadow 文件格式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#group-文件格式"><span class="nav-number">1.3.1.3.</span> <span class="nav-text">group 文件格式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#gshadow-文件格式"><span class="nav-number">1.3.1.4.</span> <span class="nav-text">gshadow 文件格式</span></a></li></ol></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#MySQL数据库"><span class="nav-number">1.</span> <span class="nav-text">MySQL数据库</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#联系的类型"><span class="nav-number">1.1.</span> <span class="nav-text">联系的类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据完整性规则"><span class="nav-number">1.2.</span> <span class="nav-text">数据完整性规则</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#设计范式"><span class="nav-number">2.</span> <span class="nav-text">设计范式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#约束"><span class="nav-number">3.</span> <span class="nav-text">约束</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MySQL体系结构"><span class="nav-number">4.</span> <span class="nav-text">MySQL体系结构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MySQL存储引擎"><span class="nav-number">5.</span> <span class="nav-text">MySQL存储引擎</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MyISAM-与-InnoDB"><span class="nav-number">6.</span> <span class="nav-text">MyISAM 与 InnoDB</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DDL语言"><span class="nav-number">7.</span> <span class="nav-text">DDL语言</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#创建数据库"><span class="nav-number">7.1.</span> <span class="nav-text">创建数据库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#删除数据库"><span class="nav-number">7.2.</span> <span class="nav-text">删除数据库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建表"><span class="nav-number">7.3.</span> <span class="nav-text">创建表</span></a></li></ol></li></ol></div>
             
 
           </div>
